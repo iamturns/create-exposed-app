@@ -1,4 +1,4 @@
-# Record architectural decisions
+# Record Architectural Decisions
 
 - Status: Accepted
 - People involved: @iamturns
@@ -21,7 +21,7 @@ Do not complicate simple process with [adr-tools](https://github.com/npryce/adr-
 
 MADR template modified to reduce verbosity, and expanded with information found in [other templates](https://github.com/joelparkerhenderson/architecture_decision_record).
 
-## Additional links
+## Additional Links
 
 - [Documenting Architecture Decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 - [Lightweight Architecture Decision Records by ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records)
