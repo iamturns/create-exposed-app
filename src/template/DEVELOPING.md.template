@@ -32,9 +32,13 @@ An [Architectural Decision (AD)](https://en.wikipedia.org/wiki/Architectural_dec
 
 An [Architectural Decision Record (ADR)](https://adr.github.io/) is a document that captures the AD, along with research, consequences, etc.
 
+### Discover ADRs
+
+ADRs are listed in [/doc/adr](/doc/adr).
+
 ### Create a new ADR
 
-Copy `.ADR-000-template.md` into a new file, and increase the number sequence.
+Copy `doc/adr/.ADR-000-template.md` into a new file, and increase the number sequence.
 
 ### Remove an ADR
 
