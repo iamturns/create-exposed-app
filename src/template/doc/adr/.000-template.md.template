@@ -1,6 +1,6 @@
-# [Title of problem and solution, present tense, imperative phrase, < 50 characters, like a git commit message]
+# [Title of Problem and Solution, Present Tense, Imperative Phrase, < 50 Characters, Like a Git Commit Message]
 
-- Status: [Proposed | Accepted | Rejected | Deprecated | Superseded by [ADR-0005](0005-example.md)]
+- Status: [Proposed | Accepted | Rejected | Deprecated | Superseded by [ADR-005](005-example.md)]
 - People involved: [list everyone involved in the decision] <!-- optional -->
 
 ## Issue
@@ -39,7 +39,7 @@
 - [Start doing X, stop doing Y, create new requirements, modify existing requirements, pose additional constraints to the environment, require renegotiating scope or schedule with customers, require additional staff training, compromises, follow-up decisions, etc]
 - …
 
-## Additional links <!-- optional -->
+## Additional Links <!-- optional -->
 
 - [Technical discussion](https://example.com/)
 - [Example usage](https://example.com/)
