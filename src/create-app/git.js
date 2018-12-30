@@ -5,10 +5,10 @@ const { spawn } = require("../utils/spawn")
 
 const calcGitDir = filePath => path.resolve(filePath, ".git")
 
-const calcOrigin = answers =>
-  `git@github.com:iamturns/${answers.projectPackageName}.git`
+const calcOrigin = setupAnswers =>
+  `git@github.com:iamturns/${setupAnswers.projectPackageName}.git`
 
-const setupGit = (filePath, answers) => {
+const setupGit = (filePath, setupAnswers) => {
   const gitDir = calcGitDir(filePath)
   debug("Git dir: %s", gitDir)
 
@@ -17,7 +17,7 @@ const setupGit = (filePath, answers) => {
     return
   }
 
-  const origin = calcOrigin(answers)
+  const origin = calcOrigin(setupAnswers)
   debug("Git origin: %s", origin)
 
   spawn("git init")
