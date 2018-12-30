@@ -1,0 +1,87 @@
+# <%= projectPackageName %>
+
+> <%= projectOverview %>
+
+- Feature 1
+- Feature 2
+
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [FAQ](#faq)
+  - [Question 1](#question-1)
+  - [Question 2](#question-2)
+- [Roadmap](#roadmap)
+- [Additional Documentation](#additional-documentation)
+- [Related](#related)
+- [Inspiration](#inspiration)
+- [Credits](#credits)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Installation
+
+This module is distributed via [npm](https://www.npmjs.com/) which is bundled with [node](https://nodejs.org).
+
+```bash
+npm install <%= projectPackageName %> --save
+```
+
+OR
+
+```bash
+npm install <%= projectPackageName %> --save-dev
+```
+
+## Usage
+
+```bash
+npm start
+```
+
+## FAQ
+
+### Question 1
+
+Answer.
+
+### Question 2
+
+Answer.
+
+## Roadmap
+
+- Feature 1
+- Feature 2
+
+## Additional Documentation
+
+- [CHANGELOG.md](CHANGELOG.md)
+- [DEVELOPING.md](DEVELOPING.md)
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [MAINTAINING.md](MAINTAINING.md)
+
+## Related
+
+- [Project 1](https://example.com)
+- [Project 2](https://example.com)
+
+## Inspiration
+
+- [Project 1](https://example.com)
+- [Project 2](https://example.com)
+
+## Credits
+
+Authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns))
+
+To all [contributors](https://github.com/iamturns/<%= projectPackageName %>/graphs/contributors) (if you exist) - thank you!
+
+## License
+
+Open source [licensed as MIT](https://github.com/iamturns/<%= projectPackageName %>/blob/master/LICENSE).

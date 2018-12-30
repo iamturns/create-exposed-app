@@ -1,0 +1,9 @@
+{
+  "search.exclude": {
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true
+}
