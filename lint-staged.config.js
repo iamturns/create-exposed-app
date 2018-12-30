@@ -1,6 +1,5 @@
 module.exports = {
   linters: {
-    "README.md": ["npm run format:readme", "git add"],
     "DEVELOPING.md": ["npm run format:developing", "git add"],
     "package.json": ["npm run format:package", "git add"],
     ".editorconfig": ["prettier --write", "git add"],
