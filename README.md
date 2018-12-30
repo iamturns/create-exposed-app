@@ -6,6 +6,10 @@
 npm init iamturns-app
 ```
 
+![command demo](doc/assets/demo-command.gif)
+
+![command structure](doc/assets/demo-structure.png)
+
 - Bundled with tools ([Jest](https://jestjs.io/), [ESLint](https://eslint.org/), etc) configured with sensible defaults (including optional [TypeScript](https://www.typescriptlang.org/) support)
 - Useful scripts: `test`, `lint`, `format`, `upgrade`, `reinstall`, and `reset` (powered by [iamturns-js-toolbox](https://github.com/iamturns/iamturns-js-toolbox))
 - Beautify files (powered by [Prettier](https://prettier.io/), [ESLint](https://eslint.org/), [EditorConfig](https://editorconfig.org/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json))
