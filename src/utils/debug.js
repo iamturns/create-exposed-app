@@ -1,8 +1,10 @@
 const debugCreator = require("debug")
 
-const debugName = featureName =>
-  ["create-iamturns-app", featureName].filter(Boolean).join(":")
-const createDebug = featureName => debugCreator(debugName(featureName))
+const debugName = maybeFeatureName =>
+  ["create-iamturns-app", maybeFeatureName].filter(Boolean).join(":")
+
+const createDebug = maybeFeatureName =>
+  debugCreator(debugName(maybeFeatureName))
 
 const debug = createDebug()
 
