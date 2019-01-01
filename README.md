@@ -10,12 +10,24 @@ npm init iamturns-app
 
 ![command structure](doc/assets/demo-structure.png)
 
-- Bundled with tools ([Jest](https://jestjs.io/), [ESLint](https://eslint.org/), etc) configured with sensible defaults (including optional [TypeScript](https://www.typescriptlang.org/) support)
-- Useful scripts: `test`, `lint`, `format`, `upgrade`, `reinstall`, and `reset` (powered by [iamturns-js-toolbox](https://github.com/iamturns/iamturns-js-toolbox))
-- Beautify files (powered by [Prettier](https://prettier.io/), [ESLint](https://eslint.org/), [EditorConfig](https://editorconfig.org/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json))
-- Automatically `format`, `lint`, and `test` changed files (powered by [lint-staged](https://github.com/okonet/lint-staged), [husky](https://github.com/typicode/husky))
-- CI/CD: validate in pull requests, version and release to NPM after merging to `master` (powered by [CircleCI](https://circleci.com/) and [semantic-release](https://github.com/semantic-release/semantic-release))
-- Documentation templates ([Architectural Decision Records](https://adr.github.io/), README.md, CHANGELOG.md, DEVELOPING.md, CONTRIBUTING.md, MAINTAINING.md, LICENSE)
+- Tools configured with sensible defaults
+  - [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
+  - Optional [TypeScript](https://www.typescriptlang.org/) support
+  - Nothing hidden or abstracted, easy to override and customize
+- Useful `npm run` scripts
+  - `test`, `lint`, `format`, `upgrade`, `reinstall`, and `reset`
+  - Powered by [iamturns-js-toolbox](https://github.com/iamturns/iamturns-js-toolbox)
+- Format (beautify) files
+  - Powered by [Prettier](https://prettier.io/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json)
+- CI/CD
+  - Automatic validation in pull requests
+  - Automatic versioning and release to NPM after merging to `master`
+  - Powered by [CircleCI](https://circleci.com/) and [semantic-release](https://github.com/semantic-release/semantic-release)
+- Automatically format, lint, and test changed files
+  - Powered by [lint-staged](https://github.com/okonet/lint-staged), [husky](https://github.com/typicode/husky)
+- Documentation templates
+  - [Architectural Decision Records](https://adr.github.io/), README.md, CHANGELOG.md, DEVELOPING.md, CONTRIBUTING.md, MAINTAINING.md, LICENSE
+  - Automatic table of contents generation (powered by [doctoc](https://github.com/thlorenz/doctoc))
 - VS Code launch scripts and settings
 
 ## Additional Documentation
