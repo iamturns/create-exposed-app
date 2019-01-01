@@ -16,7 +16,7 @@ npm init iamturns-app
   - Nothing hidden or abstracted, easy to override and customize
 - Useful `npm run` scripts
   - `test`, `lint`, `format`, `upgrade`, `reinstall`, and `reset`
-  - Powered by [iamturns-js-toolbox](https://github.com/iamturns/iamturns-js-toolbox)
+  - Powered by [iamturns-scripts](https://github.com/iamturns/iamturns-scripts)
 - Format (beautify) files
   - Powered by [Prettier](https://prettier.io/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json)
 - CI/CD
