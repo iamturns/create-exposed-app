@@ -1,6 +1,6 @@
 {
   "name": "create-iamturns-app",
-  "description": "Starter kit with configured tools for JS/TS server/client side apps",
+  "description": "App generator for my projects",
   "license": "MIT",
   "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
   "homepage": "https://github.com/iamturns/create-iamturns-app",

@@ -1,6 +1,6 @@
 # create-iamturns-app
 
-> Starter kit with configured tools for JS/TS server/client side apps
+> App generator for my projects
 
 ```bash
 npm init iamturns-app
