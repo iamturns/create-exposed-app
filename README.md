@@ -37,6 +37,12 @@ npm init iamturns-app
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [MAINTAINING.md](MAINTAINING.md)
 
+## Inspiration
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [create-esm](https://github.com/standard-things/create-esm)
+- [create-deck](https://github.com/jxnblk/mdx-deck/tree/master/create-deck)
+
 ## Credits
 
 Authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns))
