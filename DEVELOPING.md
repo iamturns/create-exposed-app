@@ -8,6 +8,7 @@
 - [Setup](#setup)
 - [Workflow](#workflow)
 - [Architectural Decision Records](#architectural-decision-records)
+  - [Discover ADRs](#discover-adrs)
   - [Create a new ADR](#create-a-new-adr)
   - [Remove an ADR](#remove-an-adr)
 
