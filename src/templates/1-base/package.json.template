@@ -18,6 +18,9 @@
     "build": "echo 'No build step'",
     "dev": "npm run dev-test",
     "dev-test": "npm run test:watch",
+    <% if (side === 'client') { %>
+    "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
+    <% } %>
     "format": "run-s format:readme format:developing format:package format:imports format:prettier format:eslint",
     "format:developing": "doctoc --maxlevel 3 --notitle ./DEVELOPING.md",
     "format:eslint": "eslint --cache --ext '.js,.jsx,.ts,.tsx' --fix ./ >/dev/null 2>&1 || true",
@@ -37,6 +40,9 @@
   "dependencies": {},
   "devDependencies": {
     "babel-jest": "^23.6.0",
+    <% if (side === 'client') { %>
+    "browserslist": "^4.3.7",
+    <% } %>
     "doctoc": "^1.3.1",
     "eslint": "^5.5.0",
     "eslint-config-iamturns": "^1.0.0",
