@@ -8,13 +8,13 @@ const { askSetupQuestions, askSetupSemanticRelease } = require("./ask")
 const { copy } = require("./copy")
 const { setupGit } = require("./git")
 
-const templatePath = path.resolve(__dirname, "..", "template")
-debug("Template path: %s", templatePath)
+const templatesPath = path.resolve(__dirname, "..", "templates")
+debug("Templates path: %s", templatesPath)
 
 const destinationPath = process.cwd()
 debug("Destination path: %s", destinationPath)
 
-const doCopy = async () => {
+const doCopy = async templatePath => {
   try {
     const copyResults = await copy(templatePath, destinationPath)
     logMessage(`${copyResults.length} file(s) copied`)
@@ -39,26 +39,39 @@ const getFilePaths = copyResults =>
     .map(copyResult => copyResult.dest)
     .filter(filePath => !isDir(filePath))
 
-const doSetup = async () => {
-  const setupAnswers = await askSetupQuestions()
-  debug("Setup answers: %O", setupAnswers)
-  setupGit(destinationPath, setupAnswers)
-  const copyResults = await doCopy()
+const copyAndRender = async (templatePath, viewData) => {
+  const copyResults = await doCopy(templatePath)
   const filePaths = getFilePaths(copyResults)
-  const renderViews = filePaths.map(filePath =>
-    renderView(filePath, setupAnswers),
-  )
+  const renderViews = filePaths.map(filePath => renderView(filePath, viewData))
   await Promise.all(renderViews)
 }
 
 const createApp = async () => {
-  await doSetup()
+  const setupAnswers = await askSetupQuestions()
+  debug("Setup answers: %O", setupAnswers)
+
+  setupGit(destinationPath, setupAnswers)
+
+  const baseTemplatePath = path.resolve(templatesPath, "1-base")
+  await copyAndRender(baseTemplatePath, setupAnswers)
+
+  if (setupAnswers.side === "server") {
+    const serverSideTemplatePath = path.resolve(templatesPath, "2-server-side")
+    await copyAndRender(serverSideTemplatePath, setupAnswers)
+  } else if (setupAnswers.side === "client") {
+    const clientSideTemplatePath = path.resolve(templatesPath, "2-client-side")
+    await copyAndRender(clientSideTemplatePath, setupAnswers)
+  }
+
   spawn("npm install")
+
   logMessage("Formatting files...")
   spawn("npm run format")
+
   if (await askSetupSemanticRelease()) {
     spawn("npx semantic-release-cli setup")
   }
+
   logMessage("All done!")
   logMessage("VS Code users: run 'Extensions: Show Recommended Extensions'")
 }
