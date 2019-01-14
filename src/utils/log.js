@@ -1,6 +1,6 @@
 const chalk = require("chalk")
 
-const logPrefix = chalk.magenta("[create-iamturns-app]")
+const logPrefix = chalk.magenta("[create-exposed-app]")
 const errorPrefix = chalk.red("[ERROR]")
 
 // eslint-disable-next-line no-console

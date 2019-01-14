@@ -29,10 +29,10 @@
 
 1. Create your feature branch: `git checkout -b my-new-feature`
 1. Create a global link: `npm link`
-1. Create new directory to test app population: `mkdir create-iamturns-app-test-my-new-feature`
+1. Create new directory to test app population: `mkdir create-exposed-app-test-my-new-feature`
 1. Write code
-1. Run `npm init iamturns-app` in `create-iamturns-app-test-my-new-feature`
-1. Once complete, submit a [pull request on GitHub](https://github.com/iamturns/create-iamturns-app/pulls).
+1. Run `npm init exposed-app` in `create-exposed-app-test-my-new-feature`
+1. Once complete, submit a [pull request on GitHub](https://github.com/iamturns/create-exposed-app/pulls).
 
 ## ADRs
 
