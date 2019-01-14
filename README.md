@@ -1,6 +1,8 @@
 # create-exposed-app
 
-> App generator with everything exposed for maximum tweaking
+App generator with everything exposed for maximum tweaking.
+
+---
 
 Like zero-config? Get out!
 
@@ -10,7 +12,7 @@ Scripts are in your face and tweakable, not tucked away behind a black box.
 
 Because every app is unique.
 
-Kick it off:
+Go for it:
 
 ```bash
 npm init exposed-app
