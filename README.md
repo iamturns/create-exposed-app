@@ -1,9 +1,19 @@
-# create-iamturns-app
+# create-exposed-app
 
-> App generator for my projects
+> App generator with everything exposed for maximum tweaking
+
+Like zero-config? Get out!
+
+Config files are exposed and ready to edit, not hidden away in one-of-those `node_modules` directories.
+
+Scripts are in your face and tweakable, not tucked away behind a black box.
+
+Because every app is unique.
+
+Kick it off:
 
 ```bash
-npm init iamturns-app
+npm init exposed-app
 ```
 
 ![command demo](docs/assets/demo-command.gif)
@@ -51,4 +61,4 @@ To all [contributors](https://github.com/iamturns/iamturns-js-toolbox/graphs/con
 
 ## License
 
-Open source [licensed as MIT](https://github.com/iamturns/create-iamturns-app/blob/master/LICENSE).
+Open source [licensed as MIT](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE).

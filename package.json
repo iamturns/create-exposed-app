@@ -1,15 +1,15 @@
 {
-  "name": "create-iamturns-app",
-  "description": "App generator for my projects",
+  "name": "create-exposed-app",
+  "description": "App generator with all config and settings exposed for maximum tweaking",
   "license": "MIT",
   "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
-  "homepage": "https://github.com/iamturns/create-iamturns-app",
+  "homepage": "https://github.com/iamturns/create-exposed-app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamturns/create-iamturns-app.git"
+    "url": "https://github.com/iamturns/create-exposed-app.git"
   },
   "bugs": {
-    "url": "https://github.com/iamturns/create-iamturns-app/issues"
+    "url": "https://github.com/iamturns/create-exposed-app/issues"
   },
   "version": "0.0.0-development",
   "main": "dist/index.js",
