@@ -14,6 +14,8 @@
   - [Where are the ADRs?](#where-are-the-adrs)
   - [How do I create a new ADR?](#how-do-i-create-a-new-adr)
   - [How do I remove an ADR?](#how-do-i-remove-an-adr)
+- [Misc](#misc)
+  - [Why does the Babel build script contain the `--source-maps` option?](#why-does-the-babel-build-script-contain-the---source-maps-option)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -55,3 +57,9 @@ Copy `docs/adr/.000-template.md` into a new file, and increase the number sequen
 ### How do I remove an ADR?
 
 ADRs should not be removed. Instead they can be rejected, deprecated, or superseded with a new ADR. See the 'Status' field in the template file.
+
+## Misc
+
+### Why does the Babel build script contain the `--source-maps` option?
+
+This option is available in the Babel config file (`sourceMaps: true`), but has diffrent behaviour. Only the command line supports the creation of `.map` files. See [https://github.com/babel/babel/issues/5261](https://github.com/babel/babel/issues/5261).

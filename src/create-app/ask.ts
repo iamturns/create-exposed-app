@@ -1,8 +1,8 @@
-const inquirer = require("inquirer")
+import inquirer, { Questions } from "inquirer"
 
-const ask = questions => inquirer.prompt(questions)
+export const ask = (questions: Questions) => inquirer.prompt(questions)
 
-const askSetupQuestions = () =>
+export const askSetupQuestions = () =>
   ask([
     {
       type: "input",
@@ -24,7 +24,7 @@ const askSetupQuestions = () =>
     },
   ])
 
-const askSetupSemanticRelease = async () => {
+export const askSetupSemanticRelease = async (): Promise<boolean> => {
   const answers = await ask([
     {
       type: "confirm",
@@ -34,10 +34,4 @@ const askSetupSemanticRelease = async () => {
     },
   ])
   return answers.setup
-}
-
-module.exports = {
-  ask,
-  askSetupQuestions,
-  askSetupSemanticRelease,
 }
