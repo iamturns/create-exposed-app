@@ -6,9 +6,9 @@
 npm init iamturns-app
 ```
 
-![command demo](doc/assets/demo-command.gif)
+![command demo](docs/assets/demo-command.gif)
 
-![command structure](doc/assets/demo-structure.png)
+![command structure](docs/assets/demo-structure.png)
 
 - Tools configured with sensible defaults
   - [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
