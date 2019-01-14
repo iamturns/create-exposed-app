@@ -1,6 +1,6 @@
 {
   "name": "create-exposed-app",
-  "description": "App generator with all config and settings exposed for maximum tweaking",
+  "description": "App generator with everything exposed for maximum tweaking",
   "license": "MIT",
   "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
   "homepage": "https://github.com/iamturns/create-exposed-app",
