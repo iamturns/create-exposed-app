@@ -1,12 +1,13 @@
-const path = require("path")
-const { renderViewOnFile } = require("../utils/view")
-const { logMessage, logError } = require("../utils/log")
-const { isDir } = require("../utils/fs")
-const { debug } = require("../utils/debug")
-const { spawn } = require("../utils/spawn")
-const { askSetupQuestions, askSetupSemanticRelease } = require("./ask")
-const { copy } = require("./copy")
-const { setupGit } = require("./git")
+import path from "path"
+
+import { debug } from "../utils/debug"
+import { isDir } from "../utils/fs"
+import { logError, logMessage } from "../utils/log"
+import { spawn } from "../utils/spawn"
+import { renderViewOnFile } from "../utils/view"
+import { askSetupQuestions, askSetupSemanticRelease } from "./ask"
+import { CopyOperation, copy } from "./copy"
+import { setupGit } from "./git"
 
 const templatesPath = path.resolve(__dirname, "..", "templates")
 debug("Templates path: %s", templatesPath)
@@ -14,7 +15,7 @@ debug("Templates path: %s", templatesPath)
 const destinationPath = process.cwd()
 debug("Destination path: %s", destinationPath)
 
-const doCopy = async templatePath => {
+const doCopy = async (templatePath: string): Promise<CopyOperation[]> => {
   try {
     const copyResults = await copy(templatePath, destinationPath)
     logMessage(`${copyResults.length} file(s) copied`)
@@ -25,7 +26,7 @@ const doCopy = async templatePath => {
   }
 }
 
-const renderView = async (filePath, data) => {
+const renderView = async (filePath: string, data: Record<string, string>) => {
   debug("Rendering view: %s", filePath)
   try {
     await renderViewOnFile(filePath, data)
@@ -34,19 +35,22 @@ const renderView = async (filePath, data) => {
   }
 }
 
-const getFilePaths = copyResults =>
+const getFilePaths = (copyResults: CopyOperation[]): string[] =>
   copyResults
     .map(copyResult => copyResult.dest)
     .filter(filePath => !isDir(filePath))
 
-const copyAndRender = async (templatePath, viewData) => {
+const copyAndRender = async (
+  templatePath: string,
+  viewData: Record<string, string>,
+) => {
   const copyResults = await doCopy(templatePath)
   const filePaths = getFilePaths(copyResults)
   const renderViews = filePaths.map(filePath => renderView(filePath, viewData))
   await Promise.all(renderViews)
 }
 
-const createApp = async () => {
+export const createApp = async () => {
   const setupAnswers = await askSetupQuestions()
   debug("Setup answers: %O", setupAnswers)
 
@@ -74,8 +78,4 @@ const createApp = async () => {
 
   logMessage("All done!")
   logMessage("VS Code users: run 'Extensions: Show Recommended Extensions'")
-}
-
-module.exports = {
-  createApp,
 }

@@ -3,12 +3,15 @@ const { pathExists } = require("../utils/fs")
 const { debug } = require("../utils/debug")
 const { spawn } = require("../utils/spawn")
 
-const calcGitDir = filePath => path.resolve(filePath, ".git")
+const calcGitDir = (filePath: string): string => path.resolve(filePath, ".git")
 
-const calcOrigin = setupAnswers =>
+const calcOrigin = (setupAnswers: Record<string, string>): string =>
   `git@github.com:iamturns/${setupAnswers.projectPackageName}.git`
 
-const setupGit = (filePath, setupAnswers) => {
+export const setupGit = (
+  filePath: string,
+  setupAnswers: Record<string, string>,
+) => {
   const gitDir = calcGitDir(filePath)
   debug("Git dir: %s", gitDir)
 
@@ -24,8 +27,4 @@ const setupGit = (filePath, setupAnswers) => {
   spawn(`git remote add origin ${origin}`)
   spawn('git commit --allow-empty -m "Init"')
   spawn("git checkout -b hello-world")
-}
-
-module.exports = {
-  setupGit,
 }

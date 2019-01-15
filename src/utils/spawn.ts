@@ -1,27 +1,39 @@
-const crossSpawn = require("cross-spawn")
+import { SpawnSyncOptions, SpawnSyncReturns } from "child_process"
 
-const { debug } = require("./debug")
+import crossSpawn from "cross-spawn"
 
-const shouldExit = (exitOnComplete, exitOnError, response) => {
+import { debug } from "./debug"
+
+const shouldExit = (
+  exitOnComplete: boolean,
+  exitOnError: boolean,
+  response: SpawnSyncReturns<Buffer>,
+) => {
   if (exitOnComplete) {
     return true
   }
   return exitOnError && response.status !== 0
 }
 
-const getCommandParts = commandIn => {
+const getCommandParts = (
+  commandIn: string,
+): { command: string; args: string[] } => {
   const [command, ...args] = commandIn.split(" ")
   return { command, args }
 }
 
-const spawn = (
-  command,
+export const spawn = (
+  command: string,
   {
     commandOptions = { stdio: "inherit" },
     exitOnComplete = false,
     exitOnError = true,
+  }: {
+    commandOptions?: SpawnSyncOptions
+    exitOnComplete?: boolean
+    exitOnError?: boolean
   } = {},
-) => {
+): SpawnSyncReturns<Buffer> => {
   debug("Spawning command: %s", command)
   debug("Command options: %j", commandOptions)
   debug("Exit on complete: %j", exitOnComplete)
@@ -43,8 +55,4 @@ const spawn = (
   }
 
   return response
-}
-
-module.exports = {
-  spawn,
 }
