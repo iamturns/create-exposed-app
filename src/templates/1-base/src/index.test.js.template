@@ -1,7 +1,0 @@
-const index = require("./index")
-
-describe("index", () => {
-  test("it should be ok", () => {
-    expect(index.ok).toBe(true)
-  })
-})

@@ -1,0 +1,7 @@
+const { app } = require("./<%= projectPackageName %>")
+
+describe("app", () => {
+  test("it should be ok", () => {
+    expect(app.ok).toBe(true)
+  })
+})

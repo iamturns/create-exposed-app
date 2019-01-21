@@ -1,16 +1,10 @@
 # create-exposed-app
 
-App generator with everything exposed for maximum tweaking.
-
----
-
 Like zero-config? Get out!
 
-Config files are exposed and ready to edit, not hidden away in one-of-those `node_modules` directories.
+Generate a flexible starting point for your app, where config files and scripts are in-your-face and ready to adapt to your needs.
 
-Scripts are in your face and tweakable, not tucked away behind a black box.
-
-Because every app is unique.
+_Because every app is unique._
 
 Go for it:
 
@@ -23,12 +17,9 @@ npm init exposed-app
 ![command structure](docs/assets/demo-structure.png)
 
 - Tools configured with sensible defaults
-  - [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
-  - Optional [TypeScript](https://www.typescriptlang.org/) support
-  - Nothing hidden or abstracted, easy to override and customize
-- Useful `npm run` scripts
-  - `test`, `lint`, `format`, `upgrade`, `reinstall`, and `reset`
-  - Powered by [iamturns-scripts](https://github.com/iamturns/iamturns-scripts)
+  - Powered by [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
+- Useful `npm run` scripts including `test`, `lint`, `format`, `build`, `validate`, `upgrade`, `reinstall`, and `reset`
+  - Powered by [iamturns-scripts](https://github.com/iamturns/iamturns-scripts), [nodemon](https://nodemon.io/), [npm-run-all](https://www.npmjs.com/package/npm-run-all), and more
 - Format (beautify) files
   - Powered by [Prettier](https://prettier.io/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json)
 - CI/CD

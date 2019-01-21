@@ -9,15 +9,18 @@ import { askSetupQuestions, askSetupSemanticRelease } from "./ask"
 import { CopyOperation, copy } from "./copy"
 import { setupGit } from "./git"
 
-const templatesPath = path.resolve(__dirname, "..", "templates")
+const templatesPath = path.resolve(__dirname, "..", "..", "templates")
 debug("Templates path: %s", templatesPath)
 
 const destinationPath = process.cwd()
 debug("Destination path: %s", destinationPath)
 
-const doCopy = async (templatePath: string): Promise<CopyOperation[]> => {
+const doCopy = async (
+  templatePath: string,
+  viewData: Record<string, string>,
+): Promise<CopyOperation[]> => {
   try {
-    const copyResults = await copy(templatePath, destinationPath)
+    const copyResults = await copy(templatePath, destinationPath, viewData)
     logMessage(`${copyResults.length} file(s) copied`)
     return copyResults
   } catch (e) {
@@ -44,7 +47,7 @@ const copyAndRender = async (
   templatePath: string,
   viewData: Record<string, string>,
 ) => {
-  const copyResults = await doCopy(templatePath)
+  const copyResults = await doCopy(templatePath, viewData)
   const filePaths = getFilePaths(copyResults)
   const renderViews = filePaths.map(filePath => renderView(filePath, viewData))
   await Promise.all(renderViews)
@@ -59,10 +62,7 @@ export const createApp = async () => {
   const baseTemplatePath = path.resolve(templatesPath, "1-base")
   await copyAndRender(baseTemplatePath, setupAnswers)
 
-  if (setupAnswers.side === "server") {
-    const serverSideTemplatePath = path.resolve(templatesPath, "2-server-side")
-    await copyAndRender(serverSideTemplatePath, setupAnswers)
-  } else if (setupAnswers.side === "client") {
+  if (setupAnswers.side === "client") {
     const clientSideTemplatePath = path.resolve(templatesPath, "2-client-side")
     await copyAndRender(clientSideTemplatePath, setupAnswers)
   }
