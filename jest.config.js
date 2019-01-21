@@ -1,6 +1,6 @@
 module.exports = {
   collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
-  moduleFileExtensions: ["js", "jsx", "json", "ts", "tsx"],
+  moduleFileExtensions: ["js", "ts", "tsx", "json", "jsx"],
   testEnvironment: "node",
   testMatch: [
     "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
