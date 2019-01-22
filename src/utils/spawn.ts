@@ -1,6 +1,7 @@
 import { SpawnSyncOptions, SpawnSyncReturns } from "child_process"
 
 import crossSpawn from "cross-spawn"
+import shellQuote from "shell-quote"
 
 import { debug } from "./debug"
 
@@ -18,7 +19,7 @@ const shouldExit = (
 const getCommandParts = (
   commandIn: string,
 ): { command: string; args: string[] } => {
-  const [command, ...args] = commandIn.split(" ")
+  const [command, ...args] = shellQuote.parse(commandIn)
   return { command, args }
 }
 
