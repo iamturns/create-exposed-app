@@ -18,8 +18,8 @@ npm init exposed-app
 
 - Tools configured with sensible defaults
   - Powered by [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
-- Useful `npm run` scripts including `test`, `lint`, `format`, `build`, `validate`, `upgrade`, `reinstall`, and `reset`
-  - Powered by [iamturns-scripts](https://github.com/iamturns/iamturns-scripts), [nodemon](https://nodemon.io/), [npm-run-all](https://www.npmjs.com/package/npm-run-all), and more
+- Useful `npm run` scripts with `:watch` pairs, including `format`, `lint`, `typecheck`, `test`, `build`, `validate`
+  - Powered by [nodemon](https://nodemon.io/), [npm-run-all](https://www.npmjs.com/package/npm-run-all), and more
 - Format (beautify) files
   - Powered by [Prettier](https://prettier.io/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json)
 - CI/CD
