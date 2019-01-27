@@ -22,7 +22,7 @@ const replaceFilepathVariable = (
 const replaceFilepathViewData = (
   filePath: string,
   viewData: Record<string, string>,
-) =>
+): string =>
   Object.entries(viewData).reduce(
     (filePathProcessed, viewDataItem) =>
       replaceFilepathVariable(
@@ -42,10 +42,10 @@ const toDestinationPath = (
   return withViewData
 }
 
-const onCopyComplete = (copyOperation: CopyOperation) =>
+const onCopyComplete = (copyOperation: CopyOperation): void =>
   logDebug("Copied %s", copyOperation.dest)
 
-const onCopyError = (copyOperation: CopyOperation) =>
+const onCopyError = (copyOperation: CopyOperation): void =>
   logError(new Error(`Could not copy ${copyOperation.dest}`))
 
 export const copy = (

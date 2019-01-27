@@ -12,7 +12,7 @@ const calcOrigin = (setupAnswers: Record<string, string>): string =>
 export const setupGit = (
   filePath: string,
   setupAnswers: Record<string, string>,
-) => {
+): void => {
   const gitDir = calcGitDir(filePath)
   logDebug("Git dir: %s", gitDir)
 

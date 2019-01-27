@@ -1,8 +1,9 @@
-import inquirer, { Questions } from "inquirer"
+import inquirer, { Answers, Questions } from "inquirer"
 
-export const ask = (questions: Questions) => inquirer.prompt(questions)
+export const ask = (questions: Questions): Promise<Answers> =>
+  inquirer.prompt(questions)
 
-export const askSetupQuestions = () =>
+export const askSetupQuestions = (): Promise<Answers> =>
   ask([
     {
       type: "input",

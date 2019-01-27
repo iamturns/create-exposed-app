@@ -28,7 +28,10 @@ const doCopy = async (
   }
 }
 
-const renderView = async (filePath: string, data: Record<string, string>) => {
+const renderView = async (
+  filePath: string,
+  data: Record<string, string>,
+): Promise<void> => {
   logDebug("Rendering view: %s", filePath)
   try {
     await renderViewOnFile(filePath, data)
@@ -45,14 +48,14 @@ const getFilePaths = (copyResults: CopyOperation[]): string[] =>
 const copyAndRender = async (
   templatePath: string,
   viewData: Record<string, string>,
-) => {
+): Promise<void> => {
   const copyResults = await doCopy(templatePath, viewData)
   const filePaths = getFilePaths(copyResults)
   const renderViews = filePaths.map(filePath => renderView(filePath, viewData))
   await Promise.all(renderViews)
 }
 
-export const createApp = async () => {
+export const createApp = async (): Promise<void> => {
   const setupAnswers = await askSetupQuestions()
   logDebug("Setup answers: %O", setupAnswers)
 
