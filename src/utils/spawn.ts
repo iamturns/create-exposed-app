@@ -9,7 +9,7 @@ const shouldExit = (
   exitOnComplete: boolean,
   exitOnError: boolean,
   response: SpawnSyncReturns<Buffer>,
-) => {
+): boolean => {
   if (exitOnComplete) {
     return true
   }
@@ -19,7 +19,7 @@ const shouldExit = (
 const getCommandParts = (
   commandIn: string,
 ): { command: string; args: string[] } => {
-  const [command, ...args] = shellQuote.parse(commandIn)
+  const [command, ...args] = shellQuote.parse(commandIn) as string[]
   return { command, args }
 }
 

@@ -1,11 +1,11 @@
 import chalk from "chalk"
 import debugCreator, { IDebugger } from "debug"
 
-export const stdout = (...args: any[]) => console.log(...args) // eslint-disable-line no-console
+export const stdout = (...args: any[]): void => console.log(...args) // eslint-disable-line no-console, @typescript-eslint/no-explicit-any
 
-export const stderr = (...args: any[]) => console.error(...args) // eslint-disable-line no-console
+export const stderr = (...args: any[]): void => console.error(...args) // eslint-disable-line no-console, @typescript-eslint/no-explicit-any
 
-export const logError = (error: Error) => {
+export const logError = (error: Error): void => {
   const message = `${error.name}: ${error.message}`
   stderr(chalk.bold.red(message))
 
@@ -20,7 +20,7 @@ export const logError = (error: Error) => {
 }
 
 // Alias for stdout
-export const logMessage = (...args: any[]) => stdout(...args)
+export const logMessage = (...args: any[]): void => stdout(...args) // eslint-disable-line @typescript-eslint/no-explicit-any
 
 export const createLogDebug = (maybeFeatureName?: string): IDebugger => {
   const debugName = ["create-exposed-app", maybeFeatureName]

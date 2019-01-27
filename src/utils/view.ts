@@ -10,7 +10,7 @@ export const renderView = (
 export const renderViewOnFile = async (
   filePath: string,
   data: Record<string, string>,
-) => {
+): Promise<void> => {
   const fileContents = fs.readFileSync(filePath, "utf8")
   const view = await renderView(fileContents, data)
   fs.writeFileSync(filePath, view)
