@@ -1,7 +1,8 @@
-const path = require("path")
-const { pathExists } = require("../utils/fs")
-const { debug } = require("../utils/debug")
-const { spawn } = require("../utils/spawn")
+import path from "path"
+
+import { pathExists } from "../utils/fs"
+import { logDebug } from "../utils/log"
+import { spawn } from "../utils/spawn"
 
 const calcGitDir = (filePath: string): string => path.resolve(filePath, ".git")
 
@@ -13,15 +14,15 @@ export const setupGit = (
   setupAnswers: Record<string, string>,
 ) => {
   const gitDir = calcGitDir(filePath)
-  debug("Git dir: %s", gitDir)
+  logDebug("Git dir: %s", gitDir)
 
   if (pathExists(gitDir)) {
-    debug("Git already setup, skipping...")
+    logDebug("Git already setup, skipping...")
     return
   }
 
   const origin = calcOrigin(setupAnswers)
-  debug("Git origin: %s", origin)
+  logDebug("Git origin: %s", origin)
 
   spawn("git init")
   spawn(`git remote add origin ${origin}`)
