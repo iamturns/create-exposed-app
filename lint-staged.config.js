@@ -11,7 +11,7 @@ module.exports = {
     "**/*.{js,jsx,ts,tsx}": [
       "import-sort --write",
       "prettier --write",
-      "eslint --cache --ext '.js,.jsx,.ts,.tsx' --fix",
+      "eslint --cache --ext .js,.jsx,.ts,.tsx --fix",
       "git add",
       "jest --bail --findRelatedTests",
     ],
