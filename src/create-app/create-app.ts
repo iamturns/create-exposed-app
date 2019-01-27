@@ -1,8 +1,7 @@
 import path from "path"
 
-import { debug } from "../utils/debug"
 import { isDir } from "../utils/fs"
-import { logError, logMessage } from "../utils/log"
+import { logDebug, logError, logMessage } from "../utils/log"
 import { spawn } from "../utils/spawn"
 import { renderViewOnFile } from "../utils/view"
 import { askSetupQuestions, askSetupSemanticRelease } from "./ask"
@@ -10,10 +9,10 @@ import { CopyOperation, copy } from "./copy"
 import { setupGit } from "./git"
 
 const templatesPath = path.resolve(__dirname, "..", "..", "templates")
-debug("Templates path: %s", templatesPath)
+logDebug("Templates path: %s", templatesPath)
 
 const destinationPath = process.cwd()
-debug("Destination path: %s", destinationPath)
+logDebug("Destination path: %s", destinationPath)
 
 const doCopy = async (
   templatePath: string,
@@ -24,17 +23,17 @@ const doCopy = async (
     logMessage(`${copyResults.length} file(s) copied`)
     return copyResults
   } catch (e) {
-    logError(`Could not copy: ${e}`)
+    logError(new Error(`Could not copy: ${e}`))
     throw e
   }
 }
 
 const renderView = async (filePath: string, data: Record<string, string>) => {
-  debug("Rendering view: %s", filePath)
+  logDebug("Rendering view: %s", filePath)
   try {
     await renderViewOnFile(filePath, data)
   } catch (e) {
-    logError(`Could not process ${filePath}: ${e}`)
+    logError(new Error(`Could not process ${filePath}: ${e}`))
   }
 }
 
@@ -55,7 +54,7 @@ const copyAndRender = async (
 
 export const createApp = async () => {
   const setupAnswers = await askSetupQuestions()
-  debug("Setup answers: %O", setupAnswers)
+  logDebug("Setup answers: %O", setupAnswers)
 
   setupGit(destinationPath, setupAnswers)
 

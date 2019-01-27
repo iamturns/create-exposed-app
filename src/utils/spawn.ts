@@ -3,7 +3,7 @@ import { SpawnSyncOptions, SpawnSyncReturns } from "child_process"
 import crossSpawn from "cross-spawn"
 import shellQuote from "shell-quote"
 
-import { debug } from "./debug"
+import { logDebug } from "./log"
 
 const shouldExit = (
   exitOnComplete: boolean,
@@ -35,23 +35,23 @@ export const spawn = (
     exitOnError?: boolean
   } = {},
 ): SpawnSyncReturns<Buffer> => {
-  debug("Spawning command: %s", command)
-  debug("Command options: %j", commandOptions)
-  debug("Exit on complete: %j", exitOnComplete)
-  debug("Exit on error: %j", exitOnError)
+  logDebug("Spawning command: %s", command)
+  logDebug("Command options: %j", commandOptions)
+  logDebug("Exit on complete: %j", exitOnComplete)
+  logDebug("Exit on error: %j", exitOnError)
 
   const commandParts = getCommandParts(command)
-  debug("Command parts: %j", commandParts)
+  logDebug("Command parts: %j", commandParts)
 
   const response = crossSpawn.sync(
     commandParts.command,
     commandParts.args,
     commandOptions,
   )
-  debug("Response status: %j", response.status)
+  logDebug("Response status: %j", response.status)
 
   if (shouldExit(exitOnComplete, exitOnError, response)) {
-    debug("shouldExit = true")
+    logDebug("shouldExit = true")
     process.exit(response.status)
   }
 

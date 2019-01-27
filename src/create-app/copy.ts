@@ -1,7 +1,6 @@
 import recursiveCopy from "recursive-copy"
 
-import { debug } from "../utils/debug"
-import { logError } from "../utils/log"
+import { logDebug, logError } from "../utils/log"
 
 export interface CopyOperation {
   dest: string
@@ -44,10 +43,10 @@ const toDestinationPath = (
 }
 
 const onCopyComplete = (copyOperation: CopyOperation) =>
-  debug("Copied %s", copyOperation.dest)
+  logDebug("Copied %s", copyOperation.dest)
 
 const onCopyError = (copyOperation: CopyOperation) =>
-  logError(copyOperation.dest)
+  logError(new Error(`Could not copy ${copyOperation.dest}`))
 
 export const copy = (
   sourcePath: string,
@@ -59,7 +58,7 @@ export const copy = (
     dot: true,
     rename: (filePath: string) => {
       const destinationPath = toDestinationPath(filePath, viewData)
-      debug("Copy %s to %s", filePath, destinationPath)
+      logDebug("Copy %s to %s", filePath, destinationPath)
       return destinationPath
     },
   }
