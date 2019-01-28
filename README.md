@@ -19,7 +19,7 @@ npm init exposed-app
 - Tools configured with sensible defaults
   - Powered by [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
 - Useful `npm run` scripts with `:watch` pairs, including `format`, `lint`, `typecheck`, `test`, `build`, `validate`
-  - Powered by [nodemon](https://nodemon.io/), [npm-run-all](https://www.npmjs.com/package/npm-run-all), and more
+  - Powered by [nodemon](https://nodemon.io/), [onchange](https://github.com/Qard/onchange), [npm-run-all](https://github.com/mysticatea/npm-run-all), and more
 - Format (beautify) files
   - Powered by [Prettier](https://prettier.io/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json)
 - CI/CD
@@ -29,13 +29,16 @@ npm init exposed-app
 - Automatically format, lint, and test changed files
   - Powered by [lint-staged](https://github.com/okonet/lint-staged), [husky](https://github.com/typicode/husky)
 - Documentation templates
-  - [Architectural Decision Records](https://adr.github.io/), README.md, CHANGELOG.md, DEVELOPING.md, CONTRIBUTING.md, MAINTAINING.md, LICENSE
+  - README.md, CHANGELOG.md, CODE_OF_CONDUCT.md, DEVELOPING.md, CONTRIBUTING.md, MAINTAINING.md, and LICENSE
+  - [GitHub templates](https://help.github.com/articles/about-issue-and-pull-request-templates/) for pull requests, bug reports, change requests, questions, and general issues.
+  - [Architectural Decision Records](https://adr.github.io/)
   - Automatic table of contents generation (powered by [doctoc](https://github.com/thlorenz/doctoc))
 - VS Code launch scripts and settings
 
 ## Additional Documentation
 
 - [CHANGELOG.md](CHANGELOG.md)
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - [DEVELOPING.md](DEVELOPING.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [MAINTAINING.md](MAINTAINING.md)
