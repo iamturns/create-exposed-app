@@ -1,7 +1,10 @@
 <!--
 Thanks for contributing!
-Enter a Title above: Summary of Issue, Present Tense, < 50 Characters
 -->
+
+**Issue**
+
+Describe your issue here.
 
 **Checklist**
 
@@ -9,6 +12,4 @@ Enter a Title above: Summary of Issue, Present Tense, < 50 Characters
 
 - [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/<%= projectPackageName %>/blob/master/CODE_OF_CONDUCT.md).
 - [ ] Checked for [duplicate issues](https://github.com/iamturns/<%= projectPackageName %>/issues).
-
-**Issue**
-Describe your issue here.
+- [ ] Title is a summary of the issue, in present tense, and ideally < 50 characters

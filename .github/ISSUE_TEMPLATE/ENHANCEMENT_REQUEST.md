@@ -1,19 +1,17 @@
 ---
 name: Enhancement request
 about: Wish something was different?
-title: Summary of Enhancement Request, Present Tense, < 50 Characters
+title: Summary of enhancement request, present tense, < 50 characters
 labels: enhancement
 assignees: iamturns
 ---
 
-**Checklist**
-
-<!-- Thanks for contributing! Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
-
-- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
-- [ ] Checked for [duplicate enhancements](https://github.com/iamturns/create-exposed-app/issues?q=label%3Aenhancement).
+<!--
+Thanks for contributing!
+-->
 
 **Enhancement**
+
 Describe your enhancement request here.
 
 Possible details to include:
@@ -23,3 +21,10 @@ Possible details to include:
 - How can it benefit others?
 - Possible implementation
 - Alternative changes or solutions considered
+
+**Checklist**
+
+<!-- Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
+
+- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Checked for [duplicate enhancements](https://github.com/iamturns/create-exposed-app/issues?q=label%3Aenhancement).
