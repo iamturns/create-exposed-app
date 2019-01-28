@@ -1,17 +1,17 @@
-<!--
-Thanks for being willing to contribute!
-First step: provide a general summary of your changes in the Title above
--->
+---
+title: Summary of Changes, Present Tense, Imperative Phrase, < 50 Characters, Like a Git Commit Message
+assignees: iamturns
+---
 
 **Checklist**
 
-<!-- Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
+<!-- Thanks for contributing! Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
 
 - [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
 - [ ] Checked for [duplicate pull requests](https://github.com/iamturns/create-exposed-app/pulls)
 - [ ] Pulling from a branch (right side), not `master`.
 - [ ] Pulling into `master` branch (left side).
-- [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug-report) exists.
+- [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug) exists.
 - [ ] Breaking API changes? Migration notes attached.
 
 **Info**
