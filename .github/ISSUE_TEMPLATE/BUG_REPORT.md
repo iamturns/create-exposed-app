@@ -1,26 +1,18 @@
 ---
 name: Bug report
 about: Something wrong? Create a bug report to improve the project.
-title: Summary of Bug Report, Present Tense, < 50 Characters
+title: Summary of bug report, present tense, < 50 characters
 labels: bug
 assignees: iamturns
 ---
 
-**Checklist**
-
-<!-- Thanks for contributing! Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
-
-- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
-- [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug).
+<!--
+Thanks for contributing!
+-->
 
 **Bug report**
+
 Introduce the bug with a summary.
-
-**Expected behavior**
-What should happen?
-
-**Actual behaviour**
-What happens instead? Please include if possible and/or relevant: error messages, stack traces, logs, screenshots.
 
 **Steps to reproduce**
 
@@ -30,28 +22,36 @@ What happens instead? Please include if possible and/or relevant: error messages
 
 Please include if possible and/or relevant: code, config, links, repository that reproduces the bug.
 
+**Expected behavior**
+
+What should happen?
+
+**Actual behaviour**
+
+What happens instead? Please include if possible and/or relevant: error messages, stack traces, logs, screenshots.
+
 **Environment**
 
-- `create-exposed-app` version:
-- Operating System and version:
-- _Client-side bug?_
+- `create-exposed-app` version: [latest]
+- Operating System and version: [e.g. macOS XX, iOS XX. See http://whatsmyos.com/]
 - Device used: [e.g. iPhone 6, MacBook Pro]
-- Browser name and version: [e.g. Chrome XX | Safari XX | Android Browser XX ]
-- _Server-side bug?_
+
+<!-- Server-side bug? Fill in details below. Othewise, remove items. -->
+
 - Node.js version:
 - npm version:
 
-Run the following script to collect version information:
+<!-- Client-side bug? Fill in details below. Othewise, remove items. -->
 
-```bash
-node -e "\
-const os = require('os');\
-const cp = require('child_process');\
-console.log('Operating System and version:: ' + os.platform() + ' ' + os.release());\
-console.log('Node.js version: ' + process.version);\
-console.log('npm version: ' + cp.execSync('npm -v'));\
-"
-```
+- Browser name and version: [e.g. Chrome XX, Safari XX, Android Browser XX. See https://www.whatsmybrowser.org/]
 
 **Additional**
+
 E.g. suggested solution, theories, etc.
+
+**Checklist**
+
+<!-- Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
+
+- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug).
