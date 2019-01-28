@@ -2,7 +2,7 @@
 
 Thanks for being willing to contribute!
 
-## Submitting a Bug Report, Change Request, Question, or General Issue
+## Submitting a Bug Report, Change Request, or Question
 
 Please use the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
 
