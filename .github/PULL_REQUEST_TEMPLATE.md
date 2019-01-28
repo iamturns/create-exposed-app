@@ -1,6 +1,6 @@
 <!--
-Thanks for being willing to contribute!
-First step: provide a general summary of your changes in the Title above
+Thanks for contributing!
+Enter a Title above: Summary of Change, Present Tense, < 50 Characters
 -->
 
 **Checklist**
@@ -11,7 +11,7 @@ First step: provide a general summary of your changes in the Title above
 - [ ] Checked for [duplicate pull requests](https://github.com/iamturns/create-exposed-app/pulls)
 - [ ] Pulling from a branch (right side), not `master`.
 - [ ] Pulling into `master` branch (left side).
-- [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug-report) exists.
+- [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug) exists.
 - [ ] Breaking API changes? Migration notes attached.
 
 **Info**

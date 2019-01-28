@@ -1,24 +1,20 @@
 ---
 name: Bug report
-about: Something isn't working as expected?
-labels: bug-report
-assignees: @iamturns
+about: Something wrong? Create a bug report to improve the project.
+title: Summary of Bug Report, Present Tense, < 50 Characters
+labels: bug
+assignees: iamturns
 ---
-
-<!--
-Thanks for being willing to contribute!
-First step: provide a general summary of the bug in the Title above
--->
 
 **Checklist**
 
-<!-- Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
+<!-- Thanks for contributing! Put an x in the boxes that apply: [X]. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! -->
 
 - [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
-- [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug-report).
+- [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug).
 
 **Bug report**
-Provide a more detailed introduction to the issue itself, and why you consider it to be a bug.
+Introduce the bug with a summary.
 
 **Expected behavior**
 What should happen?

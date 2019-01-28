@@ -1,8 +1,8 @@
 # Contributing
 
-Thanks for being willing to contribute!
+Thanks for contributing!
 
-## Submitting a Bug Report, Change Request, or Question
+## Submitting a Bug Report, Enhancement Request, or Question
 
 Please use the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
 
