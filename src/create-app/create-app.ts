@@ -61,13 +61,7 @@ export const createApp = async (): Promise<void> => {
 
   setupGit(destinationPath, setupAnswers)
 
-  const baseTemplatePath = path.resolve(templatesPath, "1-base")
-  await copyAndRender(baseTemplatePath, setupAnswers)
-
-  if (setupAnswers.side === "client") {
-    const clientSideTemplatePath = path.resolve(templatesPath, "2-client-side")
-    await copyAndRender(clientSideTemplatePath, setupAnswers)
-  }
+  await copyAndRender(templatesPath, setupAnswers)
 
   spawn("npm install")
 
