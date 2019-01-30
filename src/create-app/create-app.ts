@@ -22,9 +22,9 @@ const doCopy = async (
     const copyResults = await copy(templatePath, destinationPath, viewData)
     logMessage(`${copyResults.length} file(s) copied`)
     return copyResults
-  } catch (e) {
-    logError(new Error(`Could not copy: ${e}`))
-    throw e
+  } catch (error) {
+    logError(new Error(`Could not copy: ${error}`))
+    throw error
   }
 }
 
@@ -35,8 +35,8 @@ const renderView = async (
   logDebug("Rendering view: %s", filePath)
   try {
     await renderViewOnFile(filePath, data)
-  } catch (e) {
-    logError(new Error(`Could not process ${filePath}: ${e}`))
+  } catch (error) {
+    logError(new Error(`Could not process ${filePath}: ${error}`))
   }
 }
 
