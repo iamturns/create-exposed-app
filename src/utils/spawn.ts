@@ -52,7 +52,7 @@ export const spawn = (
 
   if (shouldExit(exitOnComplete, exitOnError, response)) {
     logDebug("shouldExit = true")
-    process.exit(response.status)
+    process.exit(response.status) // eslint-disable-line unicorn/no-process-exit
   }
 
   return response
