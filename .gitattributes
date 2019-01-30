@@ -1,3 +1,8 @@
+# Disable shrinkwrap merging as results may be invalid.
+npm-shrinkwrap.json merge=binary
+shrinkwrap.yaml merge=binary
+yarn.lock merge=binary
+
 # Source: https://github.com/alexkaratarakis/gitattributes/blob/master/Web.gitattributes
 #
 ## GITATTRIBUTES FOR WEB PROJECTS
