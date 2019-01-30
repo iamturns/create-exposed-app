@@ -1,0 +1,8 @@
+module.exports = {
+  collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
+  <%_ if (side === 'server') { _%>
+  testEnvironment: "node",
+  <%_ } else { _%>
+  testURL: "http://localhost",
+  <%_ } _%>
+}
