@@ -25,4 +25,7 @@ Describe your changes here. Possible details to include:
 - Screenshots / gif demo
 - What has changed?
 - Why was it changed?
-- Reasons for choosing this solution, and alternative solutions considered
+- Anything else changed to support the solution
+- Anything unusual to point out
+- Reasons for choosing this solution
+- Alternative solutions considered
