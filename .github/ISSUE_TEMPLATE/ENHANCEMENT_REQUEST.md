@@ -1,5 +1,5 @@
 ---
-name: :sparkles: Enhancement request
+name: Enhancement request
 about: Wish something was different?
 labels: enhancement
 assignees: iamturns

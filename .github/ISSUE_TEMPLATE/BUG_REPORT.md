@@ -1,5 +1,5 @@
 ---
-name: :bug: Bug report
+name: Bug report
 about: Something wrong? Create a bug report to improve the project.
 labels: bug
 assignees: iamturns
