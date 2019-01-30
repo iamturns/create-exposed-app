@@ -1,5 +1,5 @@
 ---
-name: Question
+name: :question: Question
 about: Need help? Curious? Ask away!
 labels: question
 assignees: iamturns

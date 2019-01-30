@@ -14,8 +14,9 @@ If you're unsure about any of them, don't hesitate to ask. We're here to help!
 
 ## Pull request
 
-- Type: [bug fix | new feature]
-- Related issue(s): #123, #456
+- Type: :bug: Bug fix
+- Type: :sparkles: Enhancement
+- Issue(s): #123, #456
 
 Describe your changes here. Possible details to include:
 
