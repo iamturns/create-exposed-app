@@ -4,8 +4,8 @@ Put an x in the checklist boxes that apply: [X]. You can also fill these out aft
 If you're unsure about any of them, don't hesitate to ask. We're here to help!
 -->
 
-- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/<%= projectPackageName %>/blob/master/CODE_OF_CONDUCT.md).
-- [ ] Checked for [duplicate issues](https://github.com/iamturns/<%= projectPackageName %>/issues).
+- [ ] Following [CODE_OF_CONDUCT.md](<%- gitHubRepoUrl %>/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Checked for [duplicate issues](<%- gitHubRepoUrl %>/issues).
 - [ ] Title is a summary of the issue, in present tense, and ideally < 50 characters
 
 ## Issue

@@ -3,16 +3,14 @@ import path from "path"
 import { pathExists } from "../utils/fs"
 import { logDebug } from "../utils/log"
 import { spawn } from "../utils/spawn"
+import { ViewData } from "./view-data/view-data"
 
 const calcGitDir = (filePath: string): string => path.resolve(filePath, ".git")
 
-const calcOrigin = (setupAnswers: Record<string, string>): string =>
-  `git@github.com:iamturns/${setupAnswers.projectPackageName}.git`
+const calcOrigin = (viewData: ViewData): string =>
+  `git@github.com:${viewData.authorGitHub}/${viewData.projectPackageName}.git`
 
-export const setupGit = (
-  filePath: string,
-  setupAnswers: Record<string, string>,
-): void => {
+export const setupGit = (filePath: string, viewData: ViewData): void => {
   const gitDir = calcGitDir(filePath)
   logDebug("Git dir: %s", gitDir)
 
@@ -21,7 +19,7 @@ export const setupGit = (
     return
   }
 
-  const origin = calcOrigin(setupAnswers)
+  const origin = calcOrigin(viewData)
   logDebug("Git origin: %s", origin)
 
   spawn("git init")

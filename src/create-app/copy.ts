@@ -21,21 +21,23 @@ const replaceFilepathVariable = (
 
 const replaceFilepathViewData = (
   filePath: string,
-  viewData: Record<string, string>,
+  viewData: Record<string, string | undefined>,
 ): string =>
   Object.entries(viewData).reduce(
     (filePathProcessed, viewDataItem) =>
-      replaceFilepathVariable(
-        filePathProcessed,
-        viewDataItem[0],
-        viewDataItem[1],
-      ),
+      !viewDataItem[1]
+        ? filePathProcessed
+        : replaceFilepathVariable(
+            filePathProcessed,
+            viewDataItem[0],
+            viewDataItem[1],
+          ),
     filePath,
   )
 
 const toDestinationPath = (
   templatePath: string,
-  viewData: Record<string, string>,
+  viewData: Record<string, string | undefined>,
 ): string => {
   const noSuffix = removeTemplateSuffix(templatePath)
   const withViewData = replaceFilepathViewData(noSuffix, viewData)
@@ -51,7 +53,7 @@ const onCopyError = (copyOperation: CopyOperation): void =>
 export const copy = (
   sourcePath: string,
   destPath: string,
-  viewData: Record<string, string>,
+  viewData: Record<string, string | undefined>,
 ): CopyOperation[] => {
   const recuriveCopyOptions = {
     overwrite: true,

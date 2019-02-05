@@ -4,9 +4,10 @@ import { isDir } from "../utils/fs"
 import { logDebug, logError, logMessage } from "../utils/log"
 import { spawn } from "../utils/spawn"
 import { renderViewOnFile } from "../utils/view"
-import { askSetupQuestions, askSetupSemanticRelease } from "./ask"
+import { SetupAnswers, askSetupQuestions, askSetupSemanticRelease } from "./ask"
 import { CopyOperation, copy } from "./copy"
 import { setupGit } from "./git"
+import { ViewData, getViewData } from "./view-data/view-data"
 
 const templatesPath = path.resolve(__dirname, "..", "..", "templates")
 logDebug("Templates path: %s", templatesPath)
@@ -16,7 +17,7 @@ logDebug("Destination path: %s", destinationPath)
 
 const doCopy = async (
   templatePath: string,
-  viewData: Record<string, string>,
+  viewData: Record<string, string | undefined>,
 ): Promise<CopyOperation[]> => {
   try {
     const copyResults = await copy(templatePath, destinationPath, viewData)
@@ -28,10 +29,7 @@ const doCopy = async (
   }
 }
 
-const renderView = async (
-  filePath: string,
-  data: Record<string, string>,
-): Promise<void> => {
+const renderView = async (filePath: string, data: ViewData): Promise<void> => {
   logDebug("Rendering view: %s", filePath)
   try {
     await renderViewOnFile(filePath, data)
@@ -47,7 +45,7 @@ const getFilePaths = (copyResults: CopyOperation[]): string[] =>
 
 const copyAndRender = async (
   templatePath: string,
-  viewData: Record<string, string>,
+  viewData: ViewData,
 ): Promise<void> => {
   const copyResults = await doCopy(templatePath, viewData)
   const filePaths = getFilePaths(copyResults)
@@ -55,13 +53,20 @@ const copyAndRender = async (
   await Promise.all(renderViews)
 }
 
-export const createApp = async (): Promise<void> => {
-  const setupAnswers = await askSetupQuestions()
+export const createApp = async (
+  maybeSetupAnswers?: SetupAnswers,
+): Promise<void> => {
+  logDebug("Maybe setup answers: %O", maybeSetupAnswers)
+
+  const setupAnswers = maybeSetupAnswers || (await askSetupQuestions())
   logDebug("Setup answers: %O", setupAnswers)
 
-  setupGit(destinationPath, setupAnswers)
+  const viewData = getViewData(setupAnswers)
+  logDebug("View data: %O", viewData)
 
-  await copyAndRender(templatesPath, setupAnswers)
+  setupGit(destinationPath, viewData)
+
+  await copyAndRender(templatesPath, viewData)
 
   spawn("npm install")
 
