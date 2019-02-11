@@ -1,5 +1,5 @@
 export const setupProcess = (): void => {
-  // Makes the script crash on unhandled rejections instead of silently ignoring them.
+  // Do not allow Promises to fail silently
   process.on("unhandledRejection", err => {
     throw err
   })
