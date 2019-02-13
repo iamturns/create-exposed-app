@@ -40,7 +40,7 @@ npm init exposed-app
 You can also invoke the app with arguments. For example:
 
 ```bash
-npm init exposed-app \
+npx create-exposed-app \
   --project-package-name="my-awesome-project" \
   --project-overview="Does awesome stuff" \
   --side="server" \
@@ -50,7 +50,7 @@ npm init exposed-app \
   --author-website="https://batman.com"
 ```
 
-Run `npm init exposed-app --help` for details.
+Run `npx create-exposed-app --help` for details.
 
 ## Additional Documentation
 
