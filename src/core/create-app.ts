@@ -4,9 +4,10 @@ import { isDir } from "../utils/fs"
 import { logDebug, logError, logMessage } from "../utils/log"
 import { spawn } from "../utils/spawn"
 import { renderViewOnFile } from "../utils/view"
-import { SetupAnswers, askSetupQuestions, askSetupSemanticRelease } from "./ask"
+import { askSetupSemanticRelease } from "./ask"
 import { CopyOperation, copy } from "./copy"
 import { setupGit } from "./git"
+import { AppOptions } from "./types"
 import { ViewData, getViewData } from "./view-data/view-data"
 
 const templatesPath = path.resolve(__dirname, "..", "..", "templates")
@@ -17,7 +18,7 @@ logDebug("Destination path: %s", destinationPath)
 
 const doCopy = async (
   templatePath: string,
-  viewData: Record<string, string | undefined>,
+  viewData: ViewData,
 ): Promise<CopyOperation[]> => {
   try {
     const copyResults = await copy(templatePath, destinationPath, viewData)
@@ -53,15 +54,10 @@ const copyAndRender = async (
   await Promise.all(renderViews)
 }
 
-export const createApp = async (
-  maybeSetupAnswers?: SetupAnswers,
-): Promise<void> => {
-  logDebug("Maybe setup answers: %O", maybeSetupAnswers)
+export const createApp = async (options: AppOptions): Promise<void> => {
+  logDebug("Options: %O", options)
 
-  const setupAnswers = maybeSetupAnswers || (await askSetupQuestions())
-  logDebug("Setup answers: %O", setupAnswers)
-
-  const viewData = getViewData(setupAnswers)
+  const viewData = getViewData(options)
   logDebug("View data: %O", viewData)
 
   setupGit(destinationPath, viewData)

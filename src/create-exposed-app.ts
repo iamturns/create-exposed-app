@@ -1,1 +1,1 @@
-export { createApp } from "./create-app/create-app"
+export { createApp } from "./core/create-app"

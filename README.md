@@ -35,6 +35,23 @@ npm init exposed-app
   - Automatic table of contents generation (powered by [doctoc](https://github.com/thlorenz/doctoc))
 - VS Code launch scripts and settings
 
+## Arguments
+
+You can also invoke the app with arguments. For example:
+
+```bash
+npm init exposed-app \
+  --project-package-name="my-awesome-project" \
+  --project-overview="Does awesome stuff" \
+  --side="server" \
+  --author-name="Bruce Wayne" \
+  --author-email="bruce.wayne@gmail.com" \
+  --author-github="batman" \
+  --author-website="https://batman.com"
+```
+
+Run `npm init exposed-app --help` for details.
+
 ## Additional Documentation
 
 - [CHANGELOG.md](CHANGELOG.md)

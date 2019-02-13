@@ -1,6 +1,7 @@
 import recursiveCopy from "recursive-copy"
 
 import { logDebug, logError } from "../utils/log"
+import { ViewData } from "./view-data/view-data"
 
 export interface CopyOperation {
   dest: string
@@ -19,9 +20,9 @@ const replaceFilepathVariable = (
   value: string,
 ): string => filePath.replace(`{${key}}`, value)
 
-const replaceFilepathViewData = (
+const replaceFilepathWithViewData = (
   filePath: string,
-  viewData: Record<string, string | undefined>,
+  viewData: ViewData,
 ): string =>
   Object.entries(viewData).reduce(
     (filePathProcessed, viewDataItem) =>
@@ -37,10 +38,10 @@ const replaceFilepathViewData = (
 
 const toDestinationPath = (
   templatePath: string,
-  viewData: Record<string, string | undefined>,
+  viewData: ViewData,
 ): string => {
   const noSuffix = removeTemplateSuffix(templatePath)
-  const withViewData = replaceFilepathViewData(noSuffix, viewData)
+  const withViewData = replaceFilepathWithViewData(noSuffix, viewData)
   return withViewData
 }
 
@@ -53,7 +54,7 @@ const onCopyError = (copyOperation: CopyOperation): void =>
 export const copy = (
   sourcePath: string,
   destPath: string,
-  viewData: Record<string, string | undefined>,
+  viewData: ViewData,
 ): CopyOperation[] => {
   const recuriveCopyOptions = {
     overwrite: true,

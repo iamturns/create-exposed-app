@@ -52,6 +52,7 @@
     "inquirer": "^6.2.1",
     "recursive-copy": "^2.0.9",
     "shell-quote": "^1.6.1",
+    "yargs": "^12.0.5",
     "yargs-parser": "^12.0.0"
   },
   "devDependencies": {
@@ -68,6 +69,7 @@
     "@types/inquirer": "0.0.43",
     "@types/jest": "^23.3.13",
     "@types/shell-quote": "^1.6.0",
+    "@types/yargs": "^12.0.8",
     "@typescript-eslint/eslint-plugin": "^1.1.1",
     "browserslist": "^4.4.1",
     "doctoc": "^1.4.0",
