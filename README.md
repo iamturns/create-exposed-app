@@ -70,7 +70,7 @@ Run `npx create-exposed-app --help` for details.
 
 Authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns))
 
-To all [contributors](https://github.com/iamturns/iamturns-js-toolbox/graphs/contributors) (if you exist) - thank you!
+To all [contributors](https://github.com/iamturns/create-exposed-app/graphs/contributors) (if you exist) - thank you!
 
 ## License
 
