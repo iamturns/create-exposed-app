@@ -16,32 +16,6 @@ npm init exposed-app
 
 ![command structure](docs/assets/demo-structure.png)
 
-## Table of Contents
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [What's included?](#whats-included)
-- [Usage](#usage)
-- [FAQ](#faq)
-  - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
-  - [I wish something was different…](#i-wish-something-was-different)
-  - [Can I contribute code?](#can-i-contribute-code)
-  - [How do I get setup for development?](#how-do-i-get-setup-for-development)
-  - [What's the development workflow?](#whats-the-development-workflow)
-  - [Why are dev tools scripts so complex and verbose?](#why-are-dev-tools-scripts-so-complex-and-verbose)
-  - [Why are there so many config files?](#why-are-there-so-many-config-files)
-  - [Why isn't the build bundled or minified?](#why-isnt-the-build-bundled-or-minified)
-  - [Why do my files automatically change?](#why-do-my-files-automatically-change)
-  - [Why does the Babel build script contain the `--source-maps` option?](#why-does-the-babel-build-script-contain-the---source-maps-option)
-  - [Why does the `format:eslint` script ignore errors?](#why-does-the-formateslint-script-ignore-errors)
-  - [My question isn't answered…](#my-question-isnt-answered)
-- [Inspiration](#inspiration)
-- [Credits](#credits)
-- [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## What's included?
 
 - :wrench: [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
@@ -86,6 +60,30 @@ npx create-exposed-app \
 ```
 
 Run `npx create-exposed-app --help` for details.
+
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [FAQ](#faq)
+  - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
+  - [I wish something was different…](#i-wish-something-was-different)
+  - [Can I contribute code?](#can-i-contribute-code)
+  - [How do I get setup for development?](#how-do-i-get-setup-for-development)
+  - [What's the development workflow?](#whats-the-development-workflow)
+  - [Why are the dev tools scripts so verbose?](#why-are-the-dev-tools-scripts-so-verbose)
+  - [Why are there so many config files?](#why-are-there-so-many-config-files)
+  - [Why isn't the build bundled or minified?](#why-isnt-the-build-bundled-or-minified)
+  - [Why do my files automatically change?](#why-do-my-files-automatically-change)
+  - [Why does the Babel build script contain the `--source-maps` option?](#why-does-the-babel-build-script-contain-the---source-maps-option)
+  - [Why does the `format:eslint` script ignore errors?](#why-does-the-formateslint-script-ignore-errors)
+  - [My question isn't answered…](#my-question-isnt-answered)
+- [Inspiration](#inspiration)
+- [Credits](#credits)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## FAQ
 
