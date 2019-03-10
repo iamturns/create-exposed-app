@@ -14,7 +14,7 @@
   "version": "0.0.0-development",
   "main": "dist/<%- projectPackageName %>.js",
   "scripts": {
-    "pre-commit": "lint-staged && npm run build",
+    "pre-commit": "lint-staged",
     "build": "run-p --print-label build:src build:dts",
     "build:dts": "tsc --emitDeclarationOnly",
     "build:dts:watch": "npm run build:dts -- --watch --preserveWatchOutput",

@@ -16,6 +16,10 @@ module.exports = {
       "git add",
       "jest --bail --findRelatedTests",
     ],
+    "src/**/*": [
+      // Run build without passing changed files to command: https://github.com/okonet/lint-staged/issues/174
+      "bash -c 'npm run build'",
+    ],
   },
   // The formatting tools are ordered to run sequentially
   concurrent: false,
