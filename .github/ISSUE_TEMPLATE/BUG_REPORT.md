@@ -7,19 +7,13 @@ assignees: iamturns
 
 <!--
 Thanks for contributing!
-Put an x in the checklist boxes that apply: [X]. You can also fill these out after creating the PR.
-If you're unsure about any of them, don't hesitate to ask. We're here to help!
 -->
 
-- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
-- [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug).
-- [ ] Title is a summary of the bug report, in present tense, and ideally < 50 characters
-
-## Bug report
+# :bug: Bug report
 
 Introduce the bug with a summary.
 
-### Steps to reproduce
+## Steps to reproduce
 
 1. ...
 2. ...
@@ -27,29 +21,45 @@ Introduce the bug with a summary.
 
 Please include if possible and/or relevant: code, config, links, repository that reproduces the bug.
 
-### Expected behavior
+## Expected behavior
 
 What should happen?
 
-### Actual behaviour
+## Actual behaviour
 
 What happens instead? Please include if possible and/or relevant: error messages, stack traces, logs, screenshots.
 
-### Environment
+## Environment
+
+<!-- Remove items that aren't relevant -->
 
 - `create-exposed-app` version: [e.g. latest]
-- Operating System and version: [e.g. macOS XX, iOS XX. See whatsmyos.com]
-- Device used: [e.g. iPhone 6, MacBook Pro]
-
-<!-- Server-side bug? Fill in details below. Othewise, remove items. -->
-
 - Node.js version:
 - npm version:
-
-<!-- Client-side bug? Fill in details below. Othewise, remove items. -->
-
+- Operating System and version: [e.g. macOS XX, iOS XX. See whatsmyos.com]
+- Device used: [e.g. iPhone 6, MacBook Pro]
 - Browser name and version: [e.g. Chrome XX, Safari XX, Android Browser XX. See whatsmybrowser.org]
 
-### Additional
+## Additional
 
 E.g. suggested solution, theories, etc.
+
+## :white_check_mark: Checklist
+
+<!--
+Put an `x` in the checklist boxes to ackknowledge: `[x]`.
+If an item does not apply: remove the `[ ]`, and surround the remaining text with `~` on each side.
+
+Example:
+
+- [x] This item is ackknowledged
+- ~This item does not apply~
+
+Feel free to submit and complete the items later.
+If you're unsure about any of these items, don't hesitate to ask. We're here to help!
+-->
+
+- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug).
+- [ ] Title is a summary of the bug report, in present tense, and ideally < 50 characters
+- [ ] Ready for review
