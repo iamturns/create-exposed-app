@@ -12,8 +12,6 @@
     "typescript",
     "typescriptreact"
   ],
-  // Prefer `markdownlint`
-  "prettier.disableLanguages": ["markdown"],
   // Run `eslint --fix` after Prettier, follows `npm run format` flow
   "prettier.eslintIntegration": true
 }
