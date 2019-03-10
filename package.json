@@ -1,6 +1,6 @@
 {
   "name": "create-exposed-app",
-  "description": "App generator with everything exposed for maximum control",
+  "description": "App generator with everything exposed for maximum control (powered by TS, Babel, Jest, ESLint, Prettier, CircleCI, and more)",
   "license": "MIT",
   "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
   "homepage": "https://github.com/iamturns/create-exposed-app",
