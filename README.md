@@ -14,8 +14,6 @@ npm init exposed-app
 
 ![command demo](docs/assets/demo-command.gif)
 
-![command structure](docs/assets/demo-structure.png)
-
 ## What's included?
 
 - :wrench: [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
