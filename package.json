@@ -32,7 +32,7 @@
     "format:eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix ./ >/dev/null 2>&1 || true",
     "format:imports": "import-sort --write '**/*.{js,jsx,ts,tsx}'",
     "format:package": "prettier-package-json --write",
-    "format:prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
+    "format:prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,md,mdx,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
     "lint": "run-p lint:eslint lint:markdown",
     "lint:eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
     "lint:markdown": "markdownlint --ignore coverage --ignore dist --ignore node_modules '**/*.md' '.**/**/*.md'",
