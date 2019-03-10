@@ -1,7 +1,7 @@
-# ADR-002: Minimally Transform Source Code During Build
+# ADR-004: Minimally Transform Source Code During Build
 
 - Status: Accepted
-- People involved: @<%- authorGitHub %>
+- People involved: @iamturns
 
 ## Issue
 
