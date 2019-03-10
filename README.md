@@ -63,31 +63,47 @@ npx create-exposed-app \
 
 Run `npx create-exposed-app --help` for details.
 
-## Table of Contents
+## Inspiration
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [create-esm](https://github.com/standard-things/create-esm)
+- [create-deck](https://github.com/jxnblk/mdx-deck/tree/master/create-deck)
+
+## Credits
+
+This project is authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns)).
+
+Thank you to all [contributors](https://github.com/iamturns/create-exposed-app/graphs/contributors).
+
+## License
+
+Open-source under [MIT License](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE).
+
+## FAQ
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [FAQ](#faq)
+- [General FAQ](#general-faq)
   - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
   - [I wish something was different…](#i-wish-something-was-different)
   - [Can I contribute code?](#can-i-contribute-code)
-  - [How do I get setup for development?](#how-do-i-get-setup-for-development)
+  - [My question isn't answered here :(](#my-question-isnt-answered-here-)
+- [Development FAQ](#development-faq)
+  - [How do I setup the project for development?](#how-do-i-setup-the-project-for-development)
   - [What's the development workflow?](#whats-the-development-workflow)
+  - [Why do my files automatically change?](#why-do-my-files-automatically-change)
+  - [I can't make a "Work in progress" commit because the build is broken](#i-cant-make-a-work-in-progress-commit-because-the-build-is-broken)
+- [Miscellaneous FAQ](#miscellaneous-faq)
   - [Why are the dev tools scripts so verbose?](#why-are-the-dev-tools-scripts-so-verbose)
   - [Why are there so many config files?](#why-are-there-so-many-config-files)
   - [Why isn't the build bundled or minified?](#why-isnt-the-build-bundled-or-minified)
-  - [Why do my files automatically change?](#why-do-my-files-automatically-change)
   - [Why does the Babel build script contain the `--source-maps` option?](#why-does-the-babel-build-script-contain-the---source-maps-option)
   - [Why does the `format:eslint` script ignore errors?](#why-does-the-formateslint-script-ignore-errors)
-  - [My question isn't answered…](#my-question-isnt-answered)
-- [Inspiration](#inspiration)
-- [Credits](#credits)
-- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## FAQ
+## General FAQ
 
 ### Uh oh, something went wrong!
 
@@ -99,36 +115,52 @@ Keen to hear all ideas! Create an enhancement request using the [GitHub issue tr
 
 ### Can I contribute code?
 
-Yes please!
+Yes please! See the [Development FAQ](#development-faq) section.
 
-> First time contributing code to an open source project on GitHub? Check out this [free video tutorial](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github).
+### My question isn't answered here :(
 
-### How do I get setup for development?
+Ask away using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
 
-1. If you don't have write access to this repo, [fork it](https://github.com/iamturns/create-exposed-app/fork).
-1. Clone the repo.
+## Development FAQ
+
+> First time contributing code to an open-source project on GitHub? Check out this [free video tutorial](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github).
+
+### How do I setup the project for development?
+
+1. If you don't have write access to this repo, [fork it](https://github.com/iamturns/create-exposed-app/fork)
+1. Clone the repo
 1. Install dependencies: `npm install`
 1. Ensure everything is working: `npm run validate`
+1. Use VS Code? Run command `Extensions: Show Recommended Extensions` and install
 
 ### What's the development workflow?
 
-1. Create a new git branch
 1. Create a system-wide link for use in other directories: `npm link`
-1. `npm run dev`
+1. Start develop mode: `npm run dev`
+1. For TDD fans: `npm run test:watch`
 1. Write code
 1. Create new temporary directory to test app population named `create-exposed-app-test-my-new-feature`
-1. Run `npm init exposed-app` or `npx create-exposed-app` in `create-exposed-app-test-my-new-feature` directory
+1. Run `npx create-exposed-app` in new directory
 
-   Note: It should use the system-wide local link to your project
+   Note: This should reference your local `create-exposed-app` copy, setup by previous linking command
 
-1. Commit changes to your branch
-1. Push changes to GitHub
-1. Submit a [pull request on GitHub](https://github.com/iamturns/create-exposed-app/pulls)
-
-Once complete:
-
+1. Create a [pull request on GitHub](https://github.com/iamturns/create-exposed-app/pulls)
 1. Remove the system-wide link: `npm unlink`
 1. Remove the temporary test directory `create-exposed-app-test-my-new-feature`
+
+### Why do my files automatically change?
+
+See [ADR-005: Format Files](docs/adr/005-format-files.md) and [ADR-006: Format Files Programmatically](docs/adr/006-format-files-programmatically.md).
+
+### I can't make a "Work in progress" commit because the build is broken
+
+Include the `--no-verify` option during the commit:
+
+```bash
+git commit -m "WIP" --no-verify
+```
+
+## Miscellaneous FAQ
 
 ### Why are the dev tools scripts so verbose?
 
@@ -142,10 +174,6 @@ See [ADR-003: Prefer Multiple Config Files](docs/adr/003-prefer-multiple-config-
 
 See [ADR-004: Minimally Transform Source Code During Build](docs/adr/004-minimally-transform-source-code-during-build.md).
 
-### Why do my files automatically change?
-
-Files are automatically formatted. See [ADR-005: Format Files](docs/adr/005-format-files.md) and [ADR-006: Format Files Programmatically](docs/adr/006-format-files-programmatically.md).
-
 ### Why does the Babel build script contain the `--source-maps` option?
 
 This option is available in the Babel config file (`sourceMaps: true`), but has diffrent behaviour. Only the command line supports the creation of `.map` files. See [https://github.com/babel/babel/issues/5261](https://github.com/babel/babel/issues/5261).
@@ -155,23 +183,3 @@ This option is available in the Babel config file (`sourceMaps: true`), but has 
 Linting errors should not be reported when formatting, that it was the `lint` command is for.
 
 Errors are ignored by appending the following: `>/dev/null 2>&1 || true`.
-
-### My question isn't answered…
-
-Ask away using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
-
-## Inspiration
-
-- [create-react-app](https://github.com/facebook/create-react-app)
-- [create-esm](https://github.com/standard-things/create-esm)
-- [create-deck](https://github.com/jxnblk/mdx-deck/tree/master/create-deck)
-
-## Credits
-
-Authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns))
-
-To all [contributors](https://github.com/iamturns/create-exposed-app/graphs/contributors) (if you exist) - thank you!
-
-## License
-
-Open source [licensed as MIT](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE).
