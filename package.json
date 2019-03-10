@@ -35,7 +35,7 @@
     "format:prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
     "lint": "run-p lint:eslint lint:markdown",
     "lint:eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
-    "lint:markdown": "markdownlint '**/*.md' --ignore coverage --ignore dist --ignore node_modules",
+    "lint:markdown": "markdownlint --ignore coverage --ignore dist --ignore node_modules '**/*.md' '.**/**/*.md'",
     "lint:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run lint",
     "prepublish": "rimraf dist && npm run build",
     "start": "node dist/create-exposed-app.js",
