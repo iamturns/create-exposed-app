@@ -46,13 +46,12 @@ E.g. suggested solution, theories, etc.
 
 ---
 
+:white_check_mark: Checklist
+
 <!--
-Put an `x` in the checklist boxes to ackknowledge: `[x]`.
-Feel free to submit now and complete the checklist items later.
+Feel free to submit now and complete the checklist items below later.
 If you're unsure about anything, don't hesitate to ask. We're here to help!
 -->
-
-:white_check_mark: **Checklist**
 
 - [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
 - [ ] Checked for [duplicate bug reports](https://github.com/iamturns/create-exposed-app/issues?q=label%3Abug).

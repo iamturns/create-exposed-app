@@ -22,19 +22,19 @@ Describe your changes here. Possible details to include:
 
 ---
 
+:white_check_mark: Checklist
+
 <!--
-Put an `x` in the checklist boxes to ackknowledge: `[x]`.
-Feel free to submit now and complete the checklist items later.
+Feel free to submit now and complete the checklist items below later.
 If you're unsure about anything, don't hesitate to ask. We're here to help!
 -->
-
-:white_check_mark: **Checklist**
 
 - [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
 - [ ] Checked for [duplicate pull requests](https://github.com/iamturns/create-exposed-app/pulls)
 - [ ] Title is a summary of the change, in present tense, ideally < 50 characters
 - [ ] Pulling from a branch (right side), not `master`.
 - [ ] Pulling into `master` branch (left side).
+- [ ] Changed relevant files in `templates` directory.
 - [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug) exists.
 - [ ] Breaking API changes? Migration notes attached.
 - [ ] Ready for review
