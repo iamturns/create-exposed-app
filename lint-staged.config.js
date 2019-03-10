@@ -4,7 +4,8 @@ module.exports = {
     "package.json": ["npm run format:package", "git add"],
     ".editorconfig": ["prettier --write", "git add"],
     LICENSE: ["prettier --write", "git add"],
-    "**/*.{css,gql,graphql,html,json,less,md,mdx,scss,vue,yaml,yml}": [
+    "**/*.md": ["markdownlint"],
+    "**/*.{css,gql,graphql,html,json,less,scss,vue,yaml,yml}": [
       "prettier --write",
       "git add",
     ],
