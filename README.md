@@ -42,6 +42,8 @@ npm init exposed-app
 
 ## Usage
 
+Run the following command and follow the prompts:
+
 ```bash
 npm init exposed-app
 ```
