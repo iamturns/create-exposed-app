@@ -124,7 +124,7 @@ Ask away using the [GitHub issue tracker](https://github.com/iamturns/create-exp
 
 1. If you don't have write access to this repo, [fork it](https://github.com/iamturns/create-exposed-app/fork)
 1. Clone the repo
-1. Install dependencies: `npm install`
+1. Install dependencies: `npm ci`
 1. Ensure everything is working: `npm run validate`
 1. Use VS Code? Run command `Extensions: Show Recommended Extensions` and install
 
