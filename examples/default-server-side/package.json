@@ -1,18 +1,18 @@
 {
-  "name": "create-exposed-app-default-server-side-example",
+  "name": "create-exposed-app",
   "description": "Default server-side example of create-exposed-app",
   "license": "MIT",
-  "author": "Bruce Wayne <bruce.wayne@gmail.com> (https://batman.com)",
-  "homepage": "https://github.com/batman/create-exposed-app-default-server-side-example",
+  "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
+  "homepage": "https://github.com/iamturns/create-exposed-app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/batman/create-exposed-app-default-server-side-example.git"
+    "url": "https://github.com/iamturns/create-exposed-app.git"
   },
   "bugs": {
-    "url": "https://github.com/batman/create-exposed-app-default-server-side-example/issues"
+    "url": "https://github.com/iamturns/create-exposed-app/issues"
   },
   "version": "0.0.0-development",
-  "main": "dist/create-exposed-app-default-server-side-example.js",
+  "main": "dist/create-exposed-app.js",
   "scripts": {
     "pre-commit": "lint-staged",
     "build": "run-p --print-label build:src build:dts",
@@ -22,7 +22,7 @@
     "build:src:watch": "npm run build:src -- --watch src/**/* --verbose",
     "build:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run build",
     "dev": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run dev:onchange",
-    "dev:onchange": "babel-node --extensions .js,.jsx,.ts,.tsx src/create-exposed-app-default-server-side-example.ts",
+    "dev:onchange": "babel-node --extensions .js,.jsx,.ts,.tsx src/create-exposed-app.ts",
     "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
     "format": "run-s format:doctoc format:package format:imports format:prettier format:eslint",
     "format:doctoc": "doctoc --maxlevel 3 --notitle ./README.md",
@@ -35,7 +35,7 @@
     "lint:markdown": "markdownlint --ignore coverage --ignore dist --ignore node_modules '**/*.md' '.**/**/*.md'",
     "lint:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run lint",
     "prepublish": "rimraf dist && npm run build",
-    "start": "node dist/create-exposed-app-default-server-side-example.js",
+    "start": "node dist/create-exposed-app.js",
     "start:dev": "NODE_ENV=development npm run start",
     "test": "jest --passWithNoTests --coverage",
     "test:watch": "jest --watch",

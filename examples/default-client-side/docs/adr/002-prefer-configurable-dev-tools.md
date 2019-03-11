@@ -1,7 +1,7 @@
 # ADR-002: Prefer Configurable Dev Tools
 
 - Status: Acceepted
-- People involved: @batman
+- People involved: @iamturns
 
 ## Issue
 

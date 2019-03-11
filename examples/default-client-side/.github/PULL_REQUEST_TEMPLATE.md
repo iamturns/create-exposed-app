@@ -29,11 +29,11 @@ Feel free to submit now and complete the checklist items below later.
 If you're unsure about anything, don't hesitate to ask. We're here to help!
 -->
 
-- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/batman/create-exposed-app-default-client-side-example/blob/master/CODE_OF_CONDUCT.md).
-- [ ] Checked for [duplicate pull requests](https://github.com/batman/create-exposed-app-default-client-side-example/pulls)
+- [ ] Following [CODE_OF_CONDUCT.md](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md).
+- [ ] Checked for [duplicate pull requests](https://github.com/iamturns/create-exposed-app/pulls)
 - [ ] Title is a summary of the change, in present tense, ideally < 50 characters
 - [ ] Pulling from a branch (right side), not `master`.
 - [ ] Pulling into `master` branch (left side).
-- [ ] Fixing a bug? An open [bug report](https://github.com/batman/create-exposed-app-default-client-side-example/labels/bug) exists.
+- [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug) exists.
 - [ ] Breaking API changes? Migration notes attached.
 - [ ] Ready for review
