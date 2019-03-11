@@ -17,7 +17,7 @@ npm init exposed-app
 ## What's included?
 
 - :wrench: [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and more
-  - Configured with sensible default
+  - Configured with sensible defaults
   - All optional and tweakable
 - :rocket: CI/CD
   - Automatic validation in pull requests, powered by [CircleCI](https://circleci.com/)
