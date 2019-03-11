@@ -30,6 +30,11 @@ npm init exposed-app
   - Automatically format and test changed files, powered by [lint-staged](https://github.com/okonet/lint-staged)
   - VS Code settings
 
+## Examples
+
+- [default-client-side](https://github.com/iamturns/create-exposed-app/tree/master/examples/default-client-side)
+- [default-server-side](https://github.com/iamturns/create-exposed-app/tree/master/examples/default-server-side)
+
 ## Usage
 
 Run the following command and follow the prompts:
@@ -52,11 +57,6 @@ npx create-exposed-app \
 ```
 
 Run `npx create-exposed-app --help` for details.
-
-## Examples
-
-- [default-client-side](https://github.com/iamturns/create-exposed-app/examples/default-client-side)
-- [default-server-side](https://github.com/iamturns/create-exposed-app/examples/default-server-side)
 
 ## Inspiration
 
