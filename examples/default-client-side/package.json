@@ -1,31 +1,28 @@
 {
-  "name": "create-exposed-app",
-  "description": "App generator with everything exposed for maximum control (powered by TS, Babel, Jest, ESLint, Prettier, CircleCI, and more)",
+  "name": "create-exposed-app-default-client-side-example",
+  "description": "Default client-side example of create-exposed-app",
   "license": "MIT",
-  "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
-  "homepage": "https://github.com/iamturns/create-exposed-app",
+  "author": "Bruce Wayne <bruce.wayne@gmail.com> (https://batman.com)",
+  "homepage": "https://github.com/batman/create-exposed-app-default-client-side-example",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamturns/create-exposed-app.git"
+    "url": "https://github.com/batman/create-exposed-app-default-client-side-example.git"
   },
   "bugs": {
-    "url": "https://github.com/iamturns/create-exposed-app/issues"
+    "url": "https://github.com/batman/create-exposed-app-default-client-side-example/issues"
   },
   "version": "0.0.0-development",
-  "main": "dist/create-exposed-app.js",
-  "bin": {
-    "create-exposed-app": "dist/bin/create-exposed-app.js"
-  },
+  "main": "dist/create-exposed-app-default-client-side-example.js",
   "scripts": {
     "pre-commit": "lint-staged",
     "build": "run-p --print-label build:src build:dts",
     "build:dts": "tsc --emitDeclarationOnly",
     "build:dts:watch": "npm run build:dts -- --watch --preserveWatchOutput",
-    "build:examples": "bash bin/build-examples.sh",
     "build:src": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
     "build:src:watch": "npm run build:src -- --watch src/**/* --verbose",
     "build:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run build",
-    "dev": "npm run build:watch",
+    "dev": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run dev:onchange",
+    "dev:onchange": "babel-node --extensions .js,.jsx,.ts,.tsx src/create-exposed-app-default-client-side-example.ts",
     "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
     "format": "run-s format:doctoc format:package format:imports format:prettier format:eslint",
     "format:doctoc": "doctoc --maxlevel 3 --notitle ./README.md",
@@ -35,28 +32,18 @@
     "format:prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,md,mdx,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
     "lint": "run-p lint:eslint lint:markdown",
     "lint:eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
-    "lint:markdown": "markdownlint --ignore coverage --ignore dist --ignore examples --ignore node_modules '**/*.md' '.**/**/*.md'",
+    "lint:markdown": "markdownlint --ignore coverage --ignore dist --ignore node_modules '**/*.md' '.**/**/*.md'",
     "lint:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run lint",
     "prepublish": "rimraf dist && npm run build",
-    "start": "node dist/create-exposed-app.js",
+    "start": "node dist/create-exposed-app-default-client-side-example.js",
     "start:dev": "NODE_ENV=development npm run start",
     "test": "jest --passWithNoTests --coverage",
     "test:watch": "jest --watch",
     "typecheck": "tsc --noEmit",
-    "typecheck:watch": "npm run typecheck -- --watch",
+    "typecheck:watch": "npm run type-check -- --watch",
     "validate": "run-p --print-label lint typecheck test build"
   },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "cross-spawn": "^6.0.5",
-    "debug": "^4.1.1",
-    "ejs": "^2.6.1",
-    "inquirer": "^6.2.1",
-    "recursive-copy": "^2.0.9",
-    "shell-quote": "^1.6.1",
-    "yargs": "^12.0.5",
-    "yargs-parser": "^12.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
@@ -70,8 +57,6 @@
     "@types/ejs": "^2.6.1",
     "@types/inquirer": "0.0.43",
     "@types/jest": "^23.3.13",
-    "@types/shell-quote": "^1.6.0",
-    "@types/yargs": "^12.0.8",
     "@typescript-eslint/eslint-plugin": "^1.1.1",
     "browserslist": "^4.4.1",
     "doctoc": "^1.4.0",
