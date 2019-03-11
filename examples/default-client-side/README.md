@@ -127,8 +127,6 @@ git commit -m "WIP" --no-verify
 
 ### Why are the dev tools scripts so verbose?
 
-See [### Why are the dev tools scripts so verbose?
-
 See [ADR-002: Prefer Configurable Dev Tools](docs/adr/002-prefer-configurable-dev-tools.md).
 
 ### Why are there so many config files?
