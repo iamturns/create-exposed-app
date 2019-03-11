@@ -1,7 +1,7 @@
 # ADR-007: Order Imports With import-sort
 
 - Status: Accepted
-- People involved: @batman
+- People involved: @iamturns
 
 ## Issue
 

@@ -1,7 +1,7 @@
 # Record Architectural Decisions
 
 - Status: Accepted
-- People involved: @batman
+- People involved: @iamturns
 
 ## Issue
 

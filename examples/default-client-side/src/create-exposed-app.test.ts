@@ -1,4 +1,4 @@
-import { app } from "./create-exposed-app-default-client-side-example"
+import { app } from "./create-exposed-app"
 
 describe("app", () => {
   test("it should be ok", () => {

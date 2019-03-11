@@ -1,4 +1,4 @@
-# create-exposed-app-default-server-side-example
+# create-exposed-app
 
 > Default server-side example of create-exposed-app
 
@@ -10,13 +10,13 @@
 This module is distributed via [npm](https://www.npmjs.com/) which is bundled with [Node.js](https://nodejs.org).
 
 ```bash
-npm install create-exposed-app-default-server-side-example --save
+npm install create-exposed-app --save
 ```
 
 OR
 
 ```bash
-npm install create-exposed-app-default-server-side-example --save-dev
+npm install create-exposed-app --save-dev
 ```
 
 ## Usage
@@ -42,13 +42,13 @@ npm start
 
 ## Credits
 
-Authored and maintained by Bruce Wayne <[bruce.wayne@gmail.com](mailto:bruce.wayne@gmail.com)> ([batman.com](https://batman.com))
+Authored and maintained by Matt Turnbull <[matt@iamturns.com](mailto:matt@iamturns.com)> ([iamturns.com](https://iamturns.com))
 
-To all [contributors](https://github.com/batman/create-exposed-app-default-server-side-example/graphs/contributors) (if you exist) - thank you!
+To all [contributors](https://github.com/iamturns/create-exposed-app/graphs/contributors) (if you exist) - thank you!
 
 ## License
 
-Open-source under [MIT License](https://github.com/batman/create-exposed-app-default-server-side-example/blob/master/LICENSE).
+Open-source under [MIT License](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE).
 
 ## FAQ
 
@@ -78,11 +78,11 @@ Open-source under [MIT License](https://github.com/batman/create-exposed-app-def
 
 ### Uh oh, something went wrong!
 
-Sorry about that. Please submit a bug report using the [GitHub issue tracker](https://github.com/batman/create-exposed-app-default-server-side-example/issues).
+Sorry about that. Please submit a bug report using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
 
 ### I wish something was different…
 
-Keen to hear all ideas! Create an enhancement request using the [GitHub issue tracker](https://github.com/batman/create-exposed-app-default-server-side-example/issues).
+Keen to hear all ideas! Create an enhancement request using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
 
 ### Can I contribute code?
 
@@ -90,7 +90,7 @@ Yes please! See the [Development FAQ](#development-faq) section.
 
 ### My question isn't answered below :(
 
-Ask away using the [GitHub issue tracker](https://github.com/batman/create-exposed-app-default-server-side-example/issues).
+Ask away using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
 
 ## Development FAQ
 
@@ -98,7 +98,7 @@ Ask away using the [GitHub issue tracker](https://github.com/batman/create-expos
 
 ### How do I setup the project for development?
 
-1. If you don't have write access to this repo, [fork it](https://github.com/batman/create-exposed-app-default-server-side-example/fork)
+1. If you don't have write access to this repo, [fork it](https://github.com/iamturns/create-exposed-app/fork)
 1. Clone the repo
 1. Install dependencies: `npm ci`
 1. Ensure everything is working: `npm run validate`
@@ -109,7 +109,7 @@ Ask away using the [GitHub issue tracker](https://github.com/batman/create-expos
 1. Start develop mode: `npm run dev`
 1. For TDD fans: `npm run test:watch`
 1. Write code
-1. Create a [pull request on GitHub](https://github.com/batman/create-exposed-app-default-server-side-example/pulls)
+1. Create a [pull request on GitHub](https://github.com/iamturns/create-exposed-app/pulls)
 
 ### Why do my files automatically change?
 

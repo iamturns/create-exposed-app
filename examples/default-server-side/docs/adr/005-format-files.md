@@ -1,7 +1,7 @@
 # ADR-005: Format Files
 
 - Status: Accepted
-- People involved: @batman
+- People involved: @iamturns
 
 ## Issue
 
