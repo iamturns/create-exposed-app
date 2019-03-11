@@ -1,6 +1,10 @@
 # create-exposed-app
 
+[![Active](https://img.shields.io/badge/active-yes-green.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/graphs/commit-activity) [![Version](https://img.shields.io/npm/v/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app) [![Build](https://img.shields.io/circleci/project/github/iamturns/create-exposed-app/master.svg?style=flat-square)](https://circleci.com/gh/iamturns/create-exposed-app) [![License](https://img.shields.io/github/license/iamturns/create-exposed-app.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app#can-i-contribute-code) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md)
+
 > Default client-side example of create-exposed-app
+
+---
 
 - Feature 1
 - Feature 2

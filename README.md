@@ -1,5 +1,11 @@
 # create-exposed-app
 
+[![Active](https://img.shields.io/badge/active-yes-green.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/graphs/commit-activity) [![Version](https://img.shields.io/npm/v/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app) [![Build](https://img.shields.io/circleci/project/github/iamturns/create-exposed-app/master.svg?style=flat-square)](https://circleci.com/gh/iamturns/create-exposed-app) [![License](https://img.shields.io/github/license/iamturns/create-exposed-app.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app#can-i-contribute-code) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md)
+
+> App generator with everything exposed for maximum control (powered by TS, Babel, Jest, ESLint, Prettier, CircleCI, and more)
+
+---
+
 Like zero-config? Get out!
 
 Generate a flexible starting point for your app, where config files and scripts are in-your-face and ready to adapt to your needs.
