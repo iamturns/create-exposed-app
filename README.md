@@ -53,6 +53,11 @@ npx create-exposed-app \
 
 Run `npx create-exposed-app --help` for details.
 
+## Examples
+
+- [default-client-side](https://github.com/iamturns/create-exposed-app/examples/default-client-side)
+- [default-server-side](https://github.com/iamturns/create-exposed-app/examples/default-server-side)
+
 ## Inspiration
 
 - [create-react-app](https://github.com/facebook/create-react-app)

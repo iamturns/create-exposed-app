@@ -2,7 +2,6 @@
   "search.exclude": {
     "**/coverage": true,
     "**/dist": true,
-    "**/examples": true,
     "**/node_modules": true
   },
   "editor.formatOnSave": true,
