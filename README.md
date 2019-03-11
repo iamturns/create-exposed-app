@@ -16,27 +16,19 @@ npm init exposed-app
 
 ## What's included?
 
-- :wrench: [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and more
-  - Configured with sensible defaults
+- :wrench: [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and more
+  - Configured with sensible default
   - All optional and tweakable
-- :arrow_forward: `npm run` scripts for `format`, `lint`, `test`, `build`, `validate`, and more
-  - Inner workings exposed and tweakable
-  - Automatically run on changed files
-  - Powered by [nodemon](https://nodemon.io/), [lint-staged](https://github.com/okonet/lint-staged), [husky](https://github.com/typicode/husky), [onchange](https://github.com/Qard/onchange), [npm-run-all](https://github.com/mysticatea/npm-run-all), and more
-- :ribbon: Format (beautify) files
-  - Powered by [Prettier](https://prettier.io/), [import-sort](https://github.com/renke/import-sort), [prettier-package-json](https://github.com/cameronhunter/prettier-package-json)
 - :rocket: CI/CD
-  - Automatic validation in pull requests
-  - Automatic versioning and release to NPM after merging to `master`
-  - Powered by [CircleCI](https://circleci.com/) and [semantic-release](https://github.com/semantic-release/semantic-release)
+  - Automatic validation in pull requests, powered by [CircleCI](https://circleci.com/)
+  - Automatic versioning and release to NPM after merging to `master`, powered by [semantic-release](https://github.com/semantic-release/semantic-release)
 - :book: Documentation templates
   - README.md, CHANGELOG.md, CODE_OF_CONDUCT.md, MAINTAINING.md, and LICENSE
   - [GitHub templates](https://help.github.com/articles/about-issue-and-pull-request-templates/) for pull requests, bug reports, change requests, questions, and general issues.
   - [Architectural Decision Records](https://adr.github.io/)
-  - Automatic table of contents generation (powered by [doctoc](https://github.com/thlorenz/doctoc))
 - :tada: More!
+  - Automatically format and test changed files, powered by [lint-staged](https://github.com/okonet/lint-staged)
   - VS Code settings
-  - Prevent merging of shrinkwrap files
 
 ## Usage
 
