@@ -2,15 +2,17 @@ import fs from "fs"
 
 import ejs from "ejs"
 
-export const renderView = (
+export function renderView(
   view: string,
   data: Record<string, string | undefined>,
-): string => ejs.render(view, data)
+): string {
+  return ejs.render(view, data)
+}
 
-export const renderViewOnFile = async (
+export async function renderViewOnFile(
   filePath: string,
   data: Record<string, string | undefined>,
-): Promise<void> => {
+): Promise<void> {
   const fileContents = fs.readFileSync(filePath, "utf8")
   const view = await renderView(fileContents, data)
   fs.writeFileSync(filePath, view)

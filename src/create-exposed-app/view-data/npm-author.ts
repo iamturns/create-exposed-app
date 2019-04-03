@@ -1,10 +1,11 @@
-import { AppOptions } from "../types"
+import { AppOptions } from "../options"
 
-export const getNpmAuthor = (appOptions: AppOptions): string =>
-  [
+export function getNpmAuthor(appOptions: AppOptions): string {
+  return [
     appOptions.authorName,
     appOptions.authorEmail && `<${appOptions.authorEmail}>`,
     appOptions.authorWebsite && `(${appOptions.authorWebsite})`,
   ]
     .filter(Boolean)
     .join(" ")
+}
