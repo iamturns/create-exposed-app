@@ -25,7 +25,7 @@
     "build:src": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
     "build:src:watch": "npm run build:src -- --watch src/**/* --verbose",
     "build:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run build",
-    "dev": "npm run build:watch",
+    "dev": "npm run build:src:watch",
     "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
     "format": "run-s format:doctoc format:package format:imports format:prettier format:eslint",
     "format:doctoc": "doctoc --maxlevel 3 --notitle ./README.md",
