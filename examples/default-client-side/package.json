@@ -25,7 +25,7 @@
     "dev:onchange": "babel-node --extensions .js,.jsx,.ts,.tsx src/create-exposed-app.ts",
     "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
     "format": "run-s format:doctoc format:package format:imports format:prettier format:eslint",
-    "format:doctoc": "doctoc --maxlevel 3 --notitle ./README.md",
+    "format:doctoc": "doctoc --maxlevel 3 --notitle ./README.md ./DEVELOPING.md",
     "format:eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix ./ >/dev/null 2>&1 || true",
     "format:imports": "import-sort --write '**/*.{js,jsx,ts,tsx}'",
     "format:package": "prettier-package-json --write",

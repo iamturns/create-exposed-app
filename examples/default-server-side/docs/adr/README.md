@@ -16,7 +16,7 @@ ADRs are listed in [/docs/adr](/docs/adr).
 
 Copy `docs/adr/.000-template.md` into a new file, and increase the number sequence.
 
-Is this ADR answering a common question? Consider placing a link within the FAQ.
+Is this ADR answering a common question? Consider placing a link within DEVELOPING.md.
 
 ## How do I remove an ADR?
 
