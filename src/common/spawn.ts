@@ -5,36 +5,20 @@ import shellQuote from "shell-quote"
 
 import { logDebug } from "./log"
 
-const shouldExit = (
-  exitOnComplete: boolean,
-  exitOnError: boolean,
-  response: SpawnSyncReturns<Buffer>,
-): boolean => {
-  if (exitOnComplete) {
-    return true
-  }
-  return exitOnError && response.status !== 0
+interface SpawnOptions {
+  commandOptions?: SpawnSyncOptions
+  exitOnComplete?: boolean
+  exitOnError?: boolean
 }
 
-const getCommandParts = (
-  commandIn: string,
-): { command: string; args: string[] } => {
-  const [command, ...args] = shellQuote.parse(commandIn) as string[]
-  return { command, args }
-}
-
-export const spawn = (
+export function spawn(
   command: string,
   {
     commandOptions = { stdio: "inherit" },
     exitOnComplete = false,
     exitOnError = true,
-  }: {
-    commandOptions?: SpawnSyncOptions
-    exitOnComplete?: boolean
-    exitOnError?: boolean
-  } = {},
-): SpawnSyncReturns<Buffer> => {
+  }: SpawnOptions = {},
+): SpawnSyncReturns<Buffer> {
   logDebug("Spawning command: %s", command)
   logDebug("Command options: %j", commandOptions)
   logDebug("Exit on complete: %j", exitOnComplete)
@@ -56,4 +40,25 @@ export const spawn = (
   }
 
   return response
+}
+
+interface CommandParts {
+  command: string
+  args: string[]
+}
+
+function getCommandParts(commandIn: string): CommandParts {
+  const [command, ...args] = shellQuote.parse(commandIn) as string[]
+  return { command, args }
+}
+
+function shouldExit(
+  exitOnComplete: boolean,
+  exitOnError: boolean,
+  response: SpawnSyncReturns<Buffer>,
+): boolean {
+  if (exitOnComplete) {
+    return true
+  }
+  return exitOnError && response.status !== 0
 }

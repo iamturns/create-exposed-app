@@ -1,13 +1,16 @@
-import { AppOptionSide, AppOptions } from "../types"
+import { AppOptionSide, AppOptions } from "../options"
 import { getViewData } from "./view-data"
 
 const appOptions: AppOptions = {
-  projectPackageName: "my-test-project",
-  projectOverview: "My test project",
-  side: AppOptionSide.server,
-  authorName: "The Tester",
   authorEmail: "test@test.com",
   authorGitHub: "the-tester",
+  authorName: "The Tester",
+  destinationPath: "./",
+  projectOverview: "My test project",
+  projectPackageName: "my-test-project",
+  side: AppOptionSide.server,
+  skipInstallDependencies: false,
+  skipSetupSemanticRelease: false,
 }
 
 const authorWebsite = "https://test.com"

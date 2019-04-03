@@ -16,7 +16,9 @@ npx create-exposed-app \
   --author-name="Matt Turnbull" \
   --author-email="matt@iamturns.com" \
   --author-github="iamturns" \
-  --author-website="https://iamturns.com"
+  --author-website="https://iamturns.com" \
+  --setup-semantic-release false \
+  --install-dependencies false
 
 rm -Rf .git .eslintcache coverage dist node_modules package-lock.json
 cd ../
@@ -35,7 +37,9 @@ npx create-exposed-app \
   --author-name="Matt Turnbull" \
   --author-email="matt@iamturns.com" \
   --author-github="iamturns" \
-  --author-website="https://iamturns.com"
+  --author-website="https://iamturns.com" \
+  --setup-semantic-release false \
+  --install-dependencies false
 
 rm -Rf .git .eslintcache coverage dist node_modules package-lock.json
 cd ../
