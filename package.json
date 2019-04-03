@@ -23,7 +23,7 @@
     "build:dts:watch": "npm run build:dts -- --watch --preserveWatchOutput",
     "build:examples": "bash bin/build-examples.sh",
     "build:src": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
-    "build:src:watch": "npm run build:src -- --watch src/**/* --verbose",
+    "build:src:watch": "npm run build:src -- --watch 'src/**/*' --verbose",
     "build:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run build",
     "dev": "npm run build:src:watch",
     "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
