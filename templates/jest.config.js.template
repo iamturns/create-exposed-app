@@ -5,4 +5,5 @@ module.exports = {
   <%_ } else { _%>
   testURL: "http://localhost",
   <%_ } _%>
+  testPathIgnorePatterns: ["/dist/", "/node_modules/"],
 }
