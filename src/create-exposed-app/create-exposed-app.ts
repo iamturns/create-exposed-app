@@ -23,6 +23,8 @@ export async function createExposedApp(options: AppOptionsUser): Promise<void> {
   const context = createAppContext(processedOptions)
   logDebug("Context: %o", context)
 
+  process.chdir(context.options.destinationPath)
+
   const stepsToExecute: StepFunction[] = [
     executeStepGit,
     executeStepCopyTemplate,

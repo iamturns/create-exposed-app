@@ -20,7 +20,7 @@ async function executeCopy(context: AppContext): Promise<CopyOperation[]> {
   try {
     const copyResults = await copy(
       context.templatesPath,
-      context.options.destinationPath,
+      "./",
       context.viewData,
     )
     logMessage(`${copyResults.length} file(s) copied`)
