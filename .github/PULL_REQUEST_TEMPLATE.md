@@ -34,7 +34,8 @@ If you're unsure about anything, don't hesitate to ask. We're here to help!
 - [ ] Title is a summary of the change, in present tense, ideally < 50 characters
 - [ ] Pulling from a branch (right side), not `master`.
 - [ ] Pulling into `master` branch (left side).
-- [ ] Changed relevant files in `templates` directory.
 - [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug) exists.
 - [ ] Breaking API changes? Migration notes attached.
+- [ ] Changed relevant files in `templates` directory.
+- [ ] Updated examples: `npm run build:examples`.
 - [ ] Ready for review
