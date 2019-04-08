@@ -1,4 +1,4 @@
-# ADR-001: Record Architectural Decisions
+# Record Architectural Decisions
 
 - Status: Accepted
 - People involved: @iamturns
