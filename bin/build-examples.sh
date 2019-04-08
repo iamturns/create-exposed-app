@@ -1,15 +1,14 @@
 rm -Rf examples
 mkdir examples
-cd examples
 
 ###
 # default-server-side
 ###
 
-mkdir default-server-side
-cd default-server-side
+mkdir examples/default-server-side
 
-npx create-exposed-app \
+npm run build-serve \
+  -- \
   --project-package-name="create-exposed-app" \
   --project-overview="Default server-side example of create-exposed-app" \
   --side="server" \
@@ -18,19 +17,25 @@ npx create-exposed-app \
   --author-github="iamturns" \
   --author-website="https://iamturns.com" \
   --setup-semantic-release false \
-  --install-dependencies false
+  --install-dependencies false \
+  --destination-path="examples/default-server-side"
 
-rm -Rf .git .eslintcache coverage dist node_modules package-lock.json
-cd ../
+rm -Rf \
+  examples/default-server-side/.git \
+  examples/default-server-side/.eslintcache \
+  examples/default-server-side/coverage \
+  examples/default-server-side/dist \
+  examples/default-server-side/node_modules \
+  examples/default-server-side/package-lock.json
 
 ###
 # default-client-side
 ###
 
-mkdir default-client-side
-cd default-client-side
+mkdir examples/default-client-side
 
-npx create-exposed-app \
+npm run build-serve \
+  -- \
   --project-package-name="create-exposed-app" \
   --project-overview="Default client-side example of create-exposed-app" \
   --side="client" \
@@ -39,7 +44,13 @@ npx create-exposed-app \
   --author-github="iamturns" \
   --author-website="https://iamturns.com" \
   --setup-semantic-release false \
-  --install-dependencies false
+  --install-dependencies false \
+  --destination-path="examples/default-client-side"
 
-rm -Rf .git .eslintcache coverage dist node_modules package-lock.json
-cd ../
+rm -Rf \
+  examples/default-server-side/.git \
+  examples/default-server-side/.eslintcache \
+  examples/default-server-side/coverage \
+  examples/default-server-side/dist \
+  examples/default-server-side/node_modules \
+  examples/default-server-side/package-lock.json

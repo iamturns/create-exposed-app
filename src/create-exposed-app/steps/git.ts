@@ -7,10 +7,7 @@ import { AppContext } from "../context"
 import { ViewData } from "../view-data/view-data"
 
 export function executeStepGit(context: AppContext): Promise<AppContext> {
-  const gitDir = calcGitDir(context.options.destinationPath)
-  logDebug("Git dir: %s", gitDir)
-
-  if (pathExists(gitDir)) {
+  if (pathExists(".git")) {
     logDebug("Git already setup, skipping...")
     return Promise.resolve(context)
   }
@@ -24,10 +21,6 @@ export function executeStepGit(context: AppContext): Promise<AppContext> {
   spawn("git checkout -b hello-world")
 
   return Promise.resolve(context)
-}
-
-function calcGitDir(filePath: string): string {
-  return path.resolve(filePath, ".git")
 }
 
 function calcOrigin(viewData: ViewData): string {

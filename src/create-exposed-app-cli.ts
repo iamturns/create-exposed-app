@@ -28,6 +28,7 @@ async function main(): Promise<void> {
     authorWebsite: args["author-website"],
     skipInstallDependencies: !args["install-dependencies"],
     skipSetupSemanticRelease: !args["setup-semantic-release"],
+    destinationPath: args["destination-path"],
   }
 
   validateOptions(maybeOptions)

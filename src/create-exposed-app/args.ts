@@ -8,8 +8,9 @@ export interface Args {
   "author-email"?: string
   "author-github"?: string
   "author-website"?: string
-  "install-dependencies": boolean
   "setup-semantic-release": boolean
+  "install-dependencies": boolean
+  "destination-path": string
 }
 
 const options = {
@@ -58,6 +59,11 @@ const options = {
     describe: "Skip installing dependencies",
     type: "confirm",
     default: true,
+    prompt: "never",
+  },
+  "destination-path": {
+    describe: "Destination path",
+    type: "input",
     prompt: "never",
   },
 }
