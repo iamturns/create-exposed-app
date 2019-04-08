@@ -19,6 +19,8 @@
   "scripts": {
     "pre-commit": "lint-staged",
     "build": "run-p --print-label build:src build:dts",
+    "build-serve": "babel-node --extensions .js,.jsx,.ts,.tsx src/create-exposed-app-cli.ts",
+    "build-serve:watch": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run build-serve",
     "build:dts": "tsc --emitDeclarationOnly",
     "build:dts:watch": "npm run build:dts -- --watch --preserveWatchOutput",
     "build:examples": "bash bin/build-examples.sh",
