@@ -24,6 +24,8 @@
     "build:src:watch": "npm run build:src -- --watch 'src/**/*' --verbose",
     "build:watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run build",
     "dev": "NODE_ENV=development npm run build-serve:watch",
+    "dev:debug": "DEBUG=* npm run dev",
+    "dev:debug:app": "DEBUG=<%- projectPackageName %> npm run dev",
     "display-browser-support": "browserslist --stats && echo '' && browserslist --coverage && echo '' && echo 'See more at https://browserl.ist/'",
     "format": "run-s format:doctoc format:package format:imports format:prettier format:eslint",
     "format:doctoc": "doctoc --maxlevel 3 --notitle ./README.md ./DEVELOPING.md",
