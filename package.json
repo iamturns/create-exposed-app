@@ -34,7 +34,6 @@
     "format-imports": "import-sort --write '**/*.{js,jsx,ts,tsx}'",
     "format-package-json": "prettier-package-json --write",
     "format-prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,md,mdx,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
-    "postinstall": "patch-package",
     "lint": "run-p lint-eslint lint-markdown",
     "lint--watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run lint",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
@@ -57,10 +56,9 @@
     "debug": "^4.1.1",
     "ejs": "^2.6.1",
     "inquirer": "^6.2.1",
-    "patch-package": "^6.1.0",
     "recursive-copy": "^2.0.9",
     "shell-quote": "^1.6.1",
-    "yargs-interactive": "^2.0.2"
+    "yargs-interactive": "^2.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
@@ -77,7 +75,7 @@
     "@types/inquirer": "^6.0.0",
     "@types/jest": "^24.0.11",
     "@types/shell-quote": "^1.6.0",
-    "@types/yargs": "^12.0.11",
+    "@types/yargs": "^13.0.0",
     "@types/yargs-interactive": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "browserslist": "^4.5.4",
