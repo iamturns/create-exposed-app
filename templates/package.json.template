@@ -16,8 +16,6 @@
   "scripts": {
     "pre-commit": "lint-staged",
     "build": "run-p --print-label build:src build:dts",
-    "build-serve": "babel-node --extensions .js,.jsx,.ts,.tsx src/<%- projectPackageName %>.ts",
-    "build-serve:watch": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run build-serve",
     "build:dts": "tsc --emitDeclarationOnly",
     "build:dts:watch": "npm run build:dts -- --watch --preserveWatchOutput",
     "build:src": "babel src --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
@@ -40,6 +38,8 @@
     "prepublish": "rimraf dist && npm run build",
     "start": "node dist/<%- projectPackageName %>.js",
     "start:dev": "NODE_ENV=development npm run start",
+    "start:src": "babel-node --extensions .js,.jsx,.ts,.tsx src/create-exposed-app-cli.ts",
+    "start:src:watch": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run start:src",
     "test": "jest --passWithNoTests --coverage",
     "test:watch": "jest --watch",
     "typecheck": "tsc --noEmit",
