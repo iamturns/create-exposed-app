@@ -37,5 +37,5 @@ If you're unsure about anything, don't hesitate to ask. We're here to help!
 - [ ] Fixing a bug? An open [bug report](https://github.com/iamturns/create-exposed-app/labels/bug) exists.
 - [ ] Breaking API changes? Migration notes attached.
 - [ ] Changed relevant files in `templates` directory.
-- [ ] Updated examples: `npm run build:examples`.
+- [ ] Updated examples: `npm run build-examples`.
 - [ ] Ready for review
