@@ -1,7 +1,7 @@
 module.exports = {
   linters: {
-    "(README|DEVELOPING).md": ["npm run format:doctoc", "git add"],
-    "package.json": ["npm run format:package", "git add"],
+    "(README|DEVELOPING).md": ["npm run format-doctoc", "git add"],
+    "package.json": ["npm run format-package-json", "git add"],
     ".editorconfig": ["prettier --write", "git add"],
     LICENSE: ["prettier --write", "git add"],
     "**/*.md": ["markdownlint"],

@@ -7,7 +7,7 @@ mkdir examples
 
 mkdir examples/default-server-side
 
-npm run start:src \
+npm run start-src \
   -- \
   --project-package-name="create-exposed-app" \
   --project-overview="Default server-side example of create-exposed-app" \
@@ -34,7 +34,7 @@ rm -Rf \
 
 mkdir examples/default-client-side
 
-npm run start:src \
+npm run start-src \
   -- \
   --project-package-name="create-exposed-app" \
   --project-overview="Default client-side example of create-exposed-app" \
