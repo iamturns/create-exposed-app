@@ -1,5 +1,6 @@
 module.exports = {
   collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
+  roots: ["<rootDir>/src/"],
   <%_ if (side === 'server') { _%>
   testEnvironment: "node",
   <%_ } else { _%>
