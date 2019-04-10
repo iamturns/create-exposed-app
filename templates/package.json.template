@@ -33,7 +33,6 @@
     "lint--watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run lint",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
     "lint-markdown": "markdownlint --ignore coverage --ignore dist --ignore node_modules '**/*.md' '.**/**/*.md'",
-    "pre-commit": "lint-staged",
     "prepublish": "rimraf dist && npm run build",
     "start": "node --require dotenv/config dist/<%- projectPackageName %>.js",
     "start--dev": "NODE_ENV=development npm run start",
@@ -45,6 +44,11 @@
     "typecheck": "tsc --noEmit",
     "typecheck--watch": "npm run typecheck -- --watch",
     "validate": "run-p --print-label lint typecheck test build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "dotenv": "^7.0.0"
