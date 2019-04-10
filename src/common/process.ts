@@ -1,6 +1,11 @@
+import { logDebug } from "./log"
+
 export function setupProcess(): void {
-  // Do not allow Promises to fail silently
-  process.on("unhandledRejection", (error: Error) => {
-    throw error
+  // Handle silently failing Promises
+  process.on("unhandledRejection", (error: unknown) => {
+    logDebug("Unhandled rejection: %j", error)
+    if (error instanceof Error) {
+      throw Error
+    }
   })
 }
