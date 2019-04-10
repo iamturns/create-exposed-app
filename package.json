@@ -1,23 +1,22 @@
 {
   "name": "create-exposed-app",
+  "version": "0.0.0-development",
   "description": "App generator with everything exposed for maximum control (powered by TS, Babel, Jest, ESLint, Prettier, CircleCI, and more)",
-  "license": "MIT",
-  "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
   "homepage": "https://github.com/iamturns/create-exposed-app",
+  "bugs": {
+    "url": "https://github.com/iamturns/create-exposed-app/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/iamturns/create-exposed-app.git"
   },
-  "bugs": {
-    "url": "https://github.com/iamturns/create-exposed-app/issues"
-  },
-  "version": "0.0.0-development",
+  "license": "MIT",
+  "author": "Matt Turnbull <matt@iamturns.com> (https://iamturns.com)",
   "main": "dist/create-exposed-app.js",
   "bin": {
     "create-exposed-app": "dist/create-exposed-app-cli.js"
   },
   "scripts": {
-    "pre-commit": "lint-staged",
     "build": "run-p --print-label build-src build-dts",
     "build--watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run build",
     "build-dts": "tsc --emitDeclarationOnly",
@@ -32,12 +31,13 @@
     "format-doctoc": "doctoc --maxlevel 3 --notitle ./README.md ./DEVELOPING.md",
     "format-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix ./ >/dev/null 2>&1 || true",
     "format-imports": "import-sort --write '**/*.{js,jsx,ts,tsx}'",
-    "format-package-json": "prettier-package-json --write",
+    "format-package-json": "sort-package-json",
     "format-prettier": "prettier --write '**/*.{css,gql,graphql,html,js,jsx,json,less,md,mdx,scss,ts,tsx,vue,yaml,yml}' '.editorconfig' 'LICENSE'",
     "lint": "run-p lint-eslint lint-markdown",
     "lint--watch": "onchange 'src/**/*' --initial --kill --delay 1000  -- npm run lint",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
     "lint-markdown": "markdownlint --ignore coverage --ignore dist --ignore examples --ignore node_modules '**/*.md' '.**/**/*.md'",
+    "pre-commit": "lint-staged",
     "prepublish": "rimraf dist && npm run build",
     "start": "node --require dotenv/config dist/create-exposed-app-cli.js",
     "start--dev": "NODE_ENV=development npm run start",
@@ -103,8 +103,8 @@
     "npm-run-all": "^4.1.5",
     "onchange": "^5.2.0",
     "prettier": "^1.16.2",
-    "prettier-package-json": "^2.1.0",
     "rimraf": "^2.6.3",
+    "sort-package-json": "^1.22.1",
     "typescript": "^3.4.1"
   }
 }
