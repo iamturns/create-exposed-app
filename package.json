@@ -43,8 +43,9 @@
     "start--dev": "NODE_ENV=development npm run start",
     "start-src": "babel-node --extensions .js,.jsx,.ts,.tsx --require node_modules/dotenv/config src/create-exposed-app-cli.ts",
     "start-src--watch": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run start-src",
-    "test": "jest --passWithNoTests --coverage",
-    "test--watch": "jest --watch",
+    "test": "jest --passWithNoTests",
+    "test--coverage": "npm run test -- --coverage",
+    "test--watch": "npm run test -- --watch",
     "typecheck": "tsc --noEmit",
     "typecheck--watch": "npm run typecheck -- --watch",
     "validate": "run-p --print-label lint typecheck test build"
