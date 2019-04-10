@@ -11,7 +11,8 @@
 - [Why are there so many config files?](#why-are-there-so-many-config-files)
 - [Why isn't the build bundled or minified?](#why-isnt-the-build-bundled-or-minified)
 - [Why does the Babel build script contain the `--source-maps` option?](#why-does-the-babel-build-script-contain-the---source-maps-option)
-- [Why does the `format-eslint` script ignore errors?](#why-does-the-format-eslint-command-ignore-errors)
+- [Why does the `format-eslint` script ignore errors?](#why-does-the-format-eslint-script-ignore-errors)
+- [Why does the `start-src` script use `--require node_modules/dotenv/config`?](#why-does-the-start-src-script-use---require-node_modulesdotenvconfig)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -71,3 +72,7 @@ This option is available in the Babel config file (`sourceMaps: true`), but has 
 Linting errors should not be reported when formatting, that it was the `lint` command is for.
 
 Errors are ignored by appending the following: `>/dev/null 2>&1 || true`.
+
+## Why does the `start-src` script use `--require node_modules/dotenv/config`?
+
+The [recommended setup](https://github.com/motdotla/dotenv#preload) advises preloading with `--require dotenv/config`. However due to a [known problem in Babel](https://github.com/babel/babel/issues/8229), this must be prefixed with `node_modules`.

@@ -35,9 +35,9 @@
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
     "lint-markdown": "markdownlint --ignore coverage --ignore dist --ignore node_modules '**/*.md' '.**/**/*.md'",
     "prepublish": "rimraf dist && npm run build",
-    "start": "node dist/<%- projectPackageName %>.js",
+    "start": "node --require dotenv/config dist/<%- projectPackageName %>.js",
     "start--dev": "NODE_ENV=development npm run start",
-    "start-src": "babel-node --extensions .js,.jsx,.ts,.tsx src/<%- projectPackageName %>.ts",
+    "start-src": "babel-node --extensions .js,.jsx,.ts,.tsx --require node_modules/dotenv/config src/<%- projectPackageName %>.ts",
     "start-src--watch": "nodemon --ext js,jsx,ts,tsx --delay 1 --exec npm run start-src",
     "test": "jest --passWithNoTests --coverage",
     "test--watch": "jest --watch",
@@ -45,7 +45,9 @@
     "typecheck--watch": "npm run typecheck -- --watch",
     "validate": "run-p --print-label lint typecheck test build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
