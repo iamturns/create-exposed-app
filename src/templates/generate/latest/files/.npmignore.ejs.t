@@ -3,7 +3,7 @@ to: .npmignore
 ---
 *
 
-!/dist
+!/dist/**/*
 
 !/package.json
 !/CHANGELOG.md
