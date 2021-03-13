@@ -81,17 +81,10 @@ Open-source under [MIT License](https://github.com/iamturns/create-exposed-app/b
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [create-exposed-app](#create-exposed-app)
-  - [What's included?](#whats-included)
-  - [Setup](#setup)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [FAQ](#faq)
-    - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
-    - [I wish something was different…](#i-wish-something-was-different)
-    - [Can I contribute code?](#can-i-contribute-code)
-    - [My question isn't answered :(](#my-question-isnt-answered-)
+- [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
+- [I wish something was different…](#i-wish-something-was-different)
+- [Can I contribute code?](#can-i-contribute-code)
+- [My question isn't answered :(](#my-question-isnt-answered-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

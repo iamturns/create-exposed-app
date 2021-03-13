@@ -6,6 +6,7 @@
 /* istanbul ignore file */
 
 import enquirer from "enquirer";
+
 import { getNpmPackageName } from "../../../template-variables";
 
 const prompts = [
