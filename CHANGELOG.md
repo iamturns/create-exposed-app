@@ -5,8 +5,12 @@
 
 ### ⚠ BREAKING CHANGES
 
-* 
+A complete overhaul. Some highlights:
+
+- Dropping CircleCI for Github Action (with auto-formatting, coverage reports, and release management)
+- Dropping Babel for ESBuild
+- Dropping semantic-release for Release Please
 
 ### Features
 
-* overhaul ([#121](https://www.github.com/iamturns/create-exposed-app/issues/121)) ([71f3095](https://www.github.com/iamturns/create-exposed-app/commit/71f3095e86a370285664903a9a73c7058d747c22))
+* Complete overhaul ([#121](https://www.github.com/iamturns/create-exposed-app/issues/121)) ([71f3095](https://www.github.com/iamturns/create-exposed-app/commit/71f3095e86a370285664903a9a73c7058d747c22))
