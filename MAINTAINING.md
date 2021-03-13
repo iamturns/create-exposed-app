@@ -6,6 +6,7 @@ This guide is intended for maintainers (anybody with commit access).
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Code of Conduct](#code-of-conduct)
+- [Setup](#setup)
 - [Reviewing Pull Requests](#reviewing-pull-requests)
 - [Approving Pull Requests](#approving-pull-requests)
 
@@ -14,6 +15,14 @@ This guide is intended for maintainers (anybody with commit access).
 ## Code of Conduct
 
 Please make sure you're familiar with and follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Setup
+
+The GitHub repo requires an `NPM_TOKEN` secret. This is used to publish the npm package via GitHub Actions.
+
+- `npm login`
+- `npm token create`
+- Add `NPM_TOKEN` to the [GitHub repo secrets](https://github.com/iamturns/create-exposed-app/settings/secrets)
 
 ## Reviewing Pull Requests
 

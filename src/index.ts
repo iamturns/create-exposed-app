@@ -30,4 +30,10 @@ async function main() {
       enquirer as any,
     debug: isDebug,
   });
+
+  /* eslint-disable no-console */
+  console.log(
+    "First time? Follow the setup instructions under MAINTAINING.md."
+  );
+  /* eslint-enable no-console */
 }
