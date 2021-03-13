@@ -20,7 +20,7 @@
 
 1. Create a system-wide link for use in other directories: `npm link`
 1. Start develop mode: `npm run dev`
-1. For TDD fans: `npm run test--tdd`
+1. For TDD fans: `npm run dev--tdd`
 1. Write code
 1. Create new temporary directory to test app population named `create-exposed-app-test-my-new-feature`
 1. Run `npx create-exposed-app` in new directory
