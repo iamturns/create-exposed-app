@@ -2,6 +2,18 @@
 
 <!-- markdownlint-disable -->
 
+## [8.1.0](https://www.github.com/iamturns/create-exposed-app/compare/v8.0.1...v8.1.0) (2021-03-13)
+
+
+### Features
+
+* include instructions for NPM_TOKEN setup ([#126](https://www.github.com/iamturns/create-exposed-app/issues/126)) ([aa51d3c](https://www.github.com/iamturns/create-exposed-app/commit/aa51d3cb7641eed6ea39487f570d39de256988fa))
+
+
+### Bug Fixes
+
+* failing build script ([#127](https://www.github.com/iamturns/create-exposed-app/issues/127)) ([f7b6004](https://www.github.com/iamturns/create-exposed-app/commit/f7b60044c860854a916df0141f6ba96086d0f375))
+
 ### [8.0.1](https://www.github.com/iamturns/create-exposed-app/compare/v8.0.0...v8.0.1) (2021-03-13)
 
 ### Bug Fixes
