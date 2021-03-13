@@ -1,8 +1,12 @@
 /**
- * This file is read by hygen
+ * This file is read by the `hygen` library.
  */
 
+// Ignore this file from unit tests. It should be tested by an end-to-end test instead.
+/* istanbul ignore file */
+
 import enquirer from "enquirer";
+import { getNpmPackageName } from "../../../template-variables";
 
 const prompts = [
   {
@@ -58,13 +62,3 @@ export const prompt = async ({
     npmPackageName: getNpmPackageName(answers),
   };
 };
-
-function getNpmPackageName({
-  packageName,
-  npmScope,
-}: {
-  packageName?: string;
-  npmScope?: string;
-}): string | undefined {
-  return [npmScope, packageName].filter(Boolean).join("/");
-}

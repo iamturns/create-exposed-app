@@ -30,7 +30,6 @@ npm init exposed-app
   - Publishing, versioning, and changelog generation, powered by [Release Please](https://github.com/googleapis/release-please)
   - Automatically format code, and commit changes back to the repo
   - PRs display a code coverage report, powered by [Coveralls](https://coveralls.io)
-  - Lint a bunch of stuff without installing anything locally, powered by [Super-Linter](https://github.com/github/super-linter)
 - 🎀 Format code, powered by [Prettier](http://prettier.io), [EditorConfig](https://editorconfig.org), [import-sort](https://github.com/renke/import-sort), [sort-package-json](https://github.com/keithamus/sort-package-json), [doctoc](https://github.com/thlorenz/doctoc)
 - 📚 Documentation templates
   - README.md, CHANGELOG.md, CODE_OF_CONDUCT.md, DEVELOPING.md, MAINTAINING.md, and LICENSE
@@ -82,10 +81,17 @@ Open-source under [MIT License](https://github.com/iamturns/create-exposed-app/b
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
-- [I wish something was different…](#i-wish-something-was-different)
-- [Can I contribute code?](#can-i-contribute-code)
-- [My question isn't answered :(](#my-question-isnt-answered-)
+- [create-exposed-app](#create-exposed-app)
+  - [What's included?](#whats-included)
+  - [Setup](#setup)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [FAQ](#faq)
+    - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
+    - [I wish something was different…](#i-wish-something-was-different)
+    - [Can I contribute code?](#can-i-contribute-code)
+    - [My question isn't answered :(](#my-question-isnt-answered-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

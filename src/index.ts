@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// Ignore this file from unit tests. It should be tested by an end-to-end test instead.
+/* istanbul ignore file */
+
 import path from "path";
 
 import enquirer from "enquirer";
