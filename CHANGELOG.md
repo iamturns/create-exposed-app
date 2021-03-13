@@ -2,6 +2,13 @@
 
 <!-- markdownlint-disable -->
 
+### [8.1.1](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.0...v8.1.1) (2021-03-13)
+
+
+### Bug Fixes
+
+* template error ([#131](https://www.github.com/iamturns/create-exposed-app/issues/131)) ([0773731](https://www.github.com/iamturns/create-exposed-app/commit/0773731fde6903891eedab6adb11474592aa7b32))
+
 ## [8.1.0](https://www.github.com/iamturns/create-exposed-app/compare/v8.0.1...v8.1.0) (2021-03-13)
 
 ### Features
