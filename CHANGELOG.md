@@ -2,6 +2,14 @@
 
 <!-- markdownlint-disable -->
 
+### [8.1.2](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.1...v8.1.2) (2021-03-13)
+
+
+### Bug Fixes
+
+* include all files in npm package ([#133](https://www.github.com/iamturns/create-exposed-app/issues/133)) ([0348c2c](https://www.github.com/iamturns/create-exposed-app/commit/0348c2c49c01527f6ad7db118a4bc099c29fd902))
+* no longer prompt for values provided in args ([#135](https://www.github.com/iamturns/create-exposed-app/issues/135)) ([0891c1d](https://www.github.com/iamturns/create-exposed-app/commit/0891c1dfb3a2ca7da27c64a28158bb0020011479))
+
 ### [8.1.1](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.0...v8.1.1) (2021-03-13)
 
 ### Bug Fixes
