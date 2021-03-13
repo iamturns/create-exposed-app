@@ -21,11 +21,11 @@ Please make sure you're familiar with and follow the [CODE_OF_CONDUCT.md](CODE_O
 
 ## Setup
 
-Your GitHub account requires an `NPM_TOKEN` secret. This is used to publish the npm package via GitHub Actions.
+The GitHub repo requires an `NPM_TOKEN` secret. This is used to publish the npm package via GitHub Actions.
 
 - `npm login`
 - `npm token create`
-- [Add a secret](https://github.com/<%- authorGithub ->/<%- packageName %>/settings/secrets) named `NPM_TOKEN`
+- Add `NPM_TOKEN` to the [GitHub repo secrets](https://github.com/<%- authorGithub ->/<%- packageName %>/settings/secrets)
 
 ## Reviewing Pull Requests
 
