@@ -33,7 +33,7 @@ to: package.json
     "test": "jest",
     "test--coverage": "npm run test -- --coverage",
     "test--watch": "npm run test -- --watch",
-    "build": "rimraf dist && run-p build-js build-dts build-templates",
+    "build": "rimraf dist && run-p build-js build-dts",
     "build--watch": "run-p build-js--cjs--watch build-dts--watch",
     "build-js": "run-s build-js--cjs build-js--esm",
     "build-js--cjs": "node bin/build.js",
@@ -41,7 +41,6 @@ to: package.json
     "build-js--esm": "gen-esm-wrapper dist/index.js dist/index.esm.js",
     "build-dts": "tsc --emitDeclarationOnly",
     "build-dts--watch": "npm run build-dts -- --watch --preserveWatchOutput",
-    "build-templates": "cp -rv ./templates ./dist",
     "validate": "run-p --print-label lint test build"
   },
   "dependencies": {
