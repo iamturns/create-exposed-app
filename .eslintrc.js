@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:eslint-comments/recommended",
     "plugin:jest/recommended",
     "plugin:promise/recommended",
@@ -21,6 +22,9 @@ module.exports = {
     node: true,
     browser: true,
     jest: true,
+  },
+  parserOptions: {
+    project: "./tsconfig.json",
   },
   rules: {
     // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
@@ -37,16 +41,26 @@ module.exports = {
       "error",
       { functions: false, classes: true, variables: true },
     ],
-    // Makes no sense to allow type inferrence for expression parameters, but require typing the response
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      { allowExpressions: true, allowTypedFunctionExpressions: true },
-    ],
+    // Allow most functions to rely on type inference. If the function is exported, then `@typescript-eslint/explicit-module-boundary-types` will ensure it's typed.
+    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-use-before-define": [
       "error",
       { functions: false, classes: true, variables: true, typedefs: true },
     ],
     // Common abbreviations are known and readable
     "unicorn/prevent-abbreviations": "off",
+    // Airbnb prefers forEach
+    "unicorn/no-array-for-each": "off",
+    // It's not accurate in the monorepo style
+    "import/no-extraneous-dependencies": "off",
   },
-}
+  overrides: [
+    {
+      files: ["*.js"],
+      rules: {
+        // Allow `require()`
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
+};

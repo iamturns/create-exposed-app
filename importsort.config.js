@@ -7,4 +7,4 @@ module.exports = {
     parser: "typescript",
     style: "module",
   },
-}
+};

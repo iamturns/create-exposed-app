@@ -1,0 +1,31 @@
+---
+to: tsconfig.json
+---
+{
+  "include": ["./**/*", "./**/.*"],
+  "exclude": ["./dist/**/*"],
+  "compilerOptions": {
+    /* Paths */
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types", "./type-definitions"],
+
+    /* Project */
+    "target": "ESNext", // TypeScript is not used for building, allow all modern features
+    "module": "ESNext", // TypeScript is not used for building, allow all modern features
+
+    /* Build */
+    // `tsc` only used to build type declaration files (`.d.ts`)
+    "declaration": true,
+    "declarationMap": true, // Allow jumping to source file instead of 'd.ts' file
+
+    /* Imports */
+    "moduleResolution": "node", // Yup, we are using Node
+    "forceConsistentCasingInFileNames": true, // Error out if import and file system have a casing mismatch. Recommended by TS.
+    "esModuleInterop": true, // Improve importing from CJS modules, recommended by TS: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop
+    "skipLibCheck": true, // Significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS.
+    "resolveJsonModule": true, // Allow importing .json files
+
+    /* Additional */
+    "strict": true // Of course!
+  }
+}

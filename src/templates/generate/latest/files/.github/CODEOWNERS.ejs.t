@@ -1,0 +1,4 @@
+---
+to: .github/CODEOWNERS
+---
+* @<%- authorGithub %>
