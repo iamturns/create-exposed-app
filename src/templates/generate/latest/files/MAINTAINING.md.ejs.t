@@ -25,7 +25,7 @@ The GitHub repo requires an `NPM_TOKEN` secret. This is used to publish the npm 
 
 - `npm login`
 - `npm token create`
-- Add `NPM_TOKEN` to the [GitHub repo secrets](https://github.com/<%- authorGithub ->/<%- packageName %>/settings/secrets)
+- Add `NPM_TOKEN` to the [GitHub repo secrets](https://github.com/<%- authorGithub %>/<%- packageName %>/settings/secrets)
 
 ## Reviewing Pull Requests
 
