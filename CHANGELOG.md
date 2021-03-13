@@ -2,6 +2,13 @@
 
 <!-- markdownlint-disable -->
 
+### [8.1.3](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.2...v8.1.3) (2021-03-13)
+
+
+### Bug Fixes
+
+* release dependency updates ([2f8a4df](https://www.github.com/iamturns/create-exposed-app/commit/2f8a4dfcdb27ab556ff7394a0d7af690b72fa6fc))
+
 ### [8.1.2](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.1...v8.1.2) (2021-03-13)
 
 ### Bug Fixes
