@@ -1,8 +1,8 @@
 # create-exposed-app
 
-[![Version](https://img.shields.io/npm/v/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app) [![Last commit](https://img.shields.io/github/last-commit/iamturns/create-exposed-app.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/graphs/commit-activity) [![Build](https://img.shields.io/circleci/project/github/iamturns/create-exposed-app/master.svg?style=flat-square)](https://circleci.com/gh/iamturns/create-exposed-app) [![License](https://img.shields.io/github/license/iamturns/create-exposed-app.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app#can-i-contribute-code) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md)
+[![Version](https://img.shields.io/npm/v/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/create-exposed-app.svg?style=flat-square)](https://www.npmjs.com/package/create-exposed-app) [![Last commit](https://img.shields.io/github/last-commit/iamturns/create-exposed-app.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/graphs/commit-activity) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fiamturns%2create-exposed-app%2Fbadge%3Fref%3Dmaster&style=flat&label=build&logo=false)](https://actions-badge.atrox.dev/iamturns/create-exposed-app/goto?ref=master) [![Coverage Status](https://coveralls.io/repos/github/iamturns/create-exposed-app/badge.svg?branch=master)](https://coveralls.io/github/iamturns/create-exposed-app?branch=master) [![License](https://img.shields.io/github/license/iamturns/create-exposed-app.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app#can-i-contribute-code) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/iamturns/create-exposed-app/blob/master/CODE_OF_CONDUCT.md)
 
-> App generator with everything exposed for maximum control (powered by TS, Babel, Jest, ESLint, Prettier, CircleCI, and more)
+> App generator with everything exposed for maximum control (powered by TypeScript, ESBuild, Jest, ESLint, GitHub Actions, Prettier, and more)
 
 ---
 
@@ -22,24 +22,29 @@ npm init exposed-app
 
 ## What's included?
 
-- :wrench: [TypeScript](https://www.typescriptlang.org/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and more
-  - Configured with sensible defaults
-  - All optional and tweakable
-- :rocket: CI/CD
-  - Automatic validation in pull requests, powered by [CircleCI](https://circleci.com/)
-  - Automatic versioning and release to NPM after merging to `master`, powered by [semantic-release](https://github.com/semantic-release/semantic-release)
-- :book: Documentation templates
-  - README.md, CHANGELOG.md, CODE_OF_CONDUCT.md, MAINTAINING.md, and LICENSE
-  - [GitHub templates](https://help.github.com/articles/about-issue-and-pull-request-templates/) for pull requests, bug reports, change requests, questions, and general issues.
+- 🏆 Powered by the usual suspects: [TypeScript](https://www.npmjs.com/package/debug), [Jest](https://jestjs.io), [ESLint](https://eslint.org)
+- 📦 TS → JS, powered by [esbuild](https://github.com/evanw/esbuild)
+  - It's so fast! With tree shaking too
+  - Outputs CJS, ESM, and `d.ts` files
+- 🚀 CI/CD, powered by [GitHub Actions](https://github.com/features/actions)
+  - Publishing, versioning, and changelog generation, powered by [Release Please](https://github.com/googleapis/release-please)
+  - Automatically format code, and commit changes back to the repo
+  - PRs display a code coverage report, powered by [Coveralls](https://coveralls.io)
+  - Lint a bunch of stuff without installing anything locally, powered by [Super-Linter](https://github.com/github/super-linter)
+- 🎀 Format code, powered by [Prettier](http://prettier.io), [EditorConfig](https://editorconfig.org), [import-sort](https://github.com/renke/import-sort), [sort-package-json](https://github.com/keithamus/sort-package-json), [doctoc](https://github.com/thlorenz/doctoc)
+- 📚 Documentation templates
+  - README.md, CHANGELOG.md, CODE_OF_CONDUCT.md, DEVELOPING.md, MAINTAINING.md, and LICENSE
+  - [GitHub templates](https://help.github.com/articles/about-issue-and-pull-request-templates/) for PRs and issues
   - [Architectural Decision Records](https://adr.github.io/)
-- :tada: More!
-  - Automatically format and test changed files, powered by [lint-staged](https://github.com/okonet/lint-staged)
-  - VS Code settings
+- 🎉 More!
+  - VS Code recommended extensions
+  - Bootstrap with some classics: [dotenv](https://www.npmjs.com/package/dotenv), [debug](https://www.npmjs.com/package/debug)
 
-## Examples
+## Setup
 
-- [default-client-side](https://github.com/iamturns/create-exposed-app/tree/master/examples/default-client-side)
-- [default-server-side](https://github.com/iamturns/create-exposed-app/tree/master/examples/default-server-side)
+```bash
+npm install @iamturns/create-exposed-app
+```
 
 ## Usage
 
@@ -62,19 +67,11 @@ npx create-exposed-app \
   --author-website="https://batman.com"
 ```
 
-Run `npx create-exposed-app --help` for details.
-
-## Inspiration
-
-- [create-react-app](https://github.com/facebook/create-react-app)
-- [create-esm](https://github.com/standard-things/create-esm)
-- [create-deck](https://github.com/jxnblk/mdx-deck/tree/master/create-deck)
-
 ## Credits
 
 This project is authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns)).
 
-Thank you to all [contributors](https://github.com/iamturns/create-exposed-app/graphs/contributors).
+A big thank you to all [contributors](https://github.com/iamturns/create-exposed-app/graphs/contributors) 🏆
 
 ## License
 
@@ -85,10 +82,17 @@ Open-source under [MIT License](https://github.com/iamturns/create-exposed-app/b
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
-- [I wish something was different…](#i-wish-something-was-different)
-- [Can I contribute code?](#can-i-contribute-code)
-- [My question isn't answered :(](#my-question-isnt-answered-)
+- [create-exposed-app](#create-exposed-app)
+  - [What's included?](#whats-included)
+  - [Setup](#setup)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [FAQ](#faq)
+    - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
+    - [I wish something was different…](#i-wish-something-was-different)
+    - [Can I contribute code?](#can-i-contribute-code)
+    - [My question isn't answered :(](#my-question-isnt-answered-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -98,7 +102,7 @@ Sorry about that. Please submit a bug report using the [GitHub issue tracker](ht
 
 ### I wish something was different…
 
-Keen to hear all ideas! Create an enhancement request using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
+Keen to hear all ideas in [GitHub discussions](https://github.com/iamturns/create-exposed-app/discussions).
 
 ### Can I contribute code?
 
@@ -106,4 +110,4 @@ Yes please! See [DEVELOPING.md](./DEVELOPING.md).
 
 ### My question isn't answered :(
 
-Ask away using the [GitHub issue tracker](https://github.com/iamturns/create-exposed-app/issues).
+Ask away in [GitHub discussions](https://github.com/iamturns/create-exposed-app/discussions).
