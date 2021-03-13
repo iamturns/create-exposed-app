@@ -2,6 +2,13 @@
 
 <!-- markdownlint-disable -->
 
+### [8.0.1](https://www.github.com/iamturns/create-exposed-app/compare/v8.0.0...v8.0.1) (2021-03-13)
+
+
+### Bug Fixes
+
+* build badge ([#123](https://www.github.com/iamturns/create-exposed-app/issues/123)) ([1c5ada3](https://www.github.com/iamturns/create-exposed-app/commit/1c5ada36509579bb907ad725a497f0d3008b81e2))
+
 ## [8.0.0](https://www.github.com/iamturns/create-exposed-app/compare/v7.2.0...v8.0.0) (2021-03-13)
 
 ### ⚠ BREAKING CHANGES
