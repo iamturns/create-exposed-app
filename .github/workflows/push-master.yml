@@ -18,7 +18,7 @@ jobs:
 
       # Commits in master must be semver for "Release Please"
       - name: Lint commits
-        uses: wagoid/commitlint-github-action@v2
+        uses: wagoid/commitlint-github-action@v3
 
       - name: Setup Node
         uses: actions/setup-node@v2
