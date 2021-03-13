@@ -1,4 +1,4 @@
-# ADR-003: Prefer Multiple Config Files
+# ADR-002: Prefer Multiple Config Files
 
 - Status: Accepted
 - People involved: @iamturns
@@ -17,4 +17,4 @@ Prefer multiple config files.
 - Storing with extensions (e.g. `.js`, `.yml`, `.json`) provides syntax highlighting
 - Easier to find the configuration
 - Easier for IDE and other tools to discover
-- Improved seperation of concerns
+- Improved separation of concerns

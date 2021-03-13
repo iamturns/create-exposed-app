@@ -4,7 +4,7 @@ default: true
 line-length: false
 
 no-trailing-punctuation:
-  # Allow headings to end with question mark for FAQ
+  # Allow headings to end with question mark
   punctuation: ".,;:"
 
 # Prettier handles these:

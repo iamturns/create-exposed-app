@@ -1,4 +1,4 @@
-# ADR-007: Order Imports With import-sort
+# ADR-003: Order Imports With import-sort
 
 - Status: Accepted
 - People involved: @iamturns

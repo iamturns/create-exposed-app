@@ -1,13 +1,7 @@
+// Used by Jest
 module.exports = {
   presets: [
-    // Compile to environments listed in .browserslistrc
-    "@babel/env",
-    "@babel/typescript",
+    ["@babel/preset-env", { targets: { node: "current" } }],
+    "@babel/preset-typescript",
   ],
-  plugins: [
-    // class { handleThing = () => { } }
-    "@babel/proposal-class-properties",
-    // { ...spread }
-    "@babel/proposal-object-rest-spread",
-  ],
-}
+};

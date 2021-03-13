@@ -1,18 +1,5 @@
 {
   "search.exclude": {
-    "**/coverage": true,
-    "**/dist": true,
-    "**/examples": true,
-    "**/node_modules": true
-  },
-  "editor.formatOnSave": true,
-  // Show eslint warnings and errors in typescript files
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  // Run `eslint --fix` after Prettier, follows `npm run format` flow
-  "prettier.eslintIntegration": true
+    "**/package-lock.json": true
+  }
 }
