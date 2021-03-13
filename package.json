@@ -34,7 +34,6 @@
     "validate": "run-p --print-label lint test build"
   },
   "dependencies": {
-    "execa": "^4.1.0",
     "hygen": "^6.0.4"
   },
   "devDependencies": {

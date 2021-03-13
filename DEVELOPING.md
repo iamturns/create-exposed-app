@@ -28,5 +28,5 @@
    Note: This should reference your local `create-exposed-app` copy, setup by previous linking command
 
 1. Create a [pull request on GitHub](https://github.com/iamturns/create-exposed-app/pulls)
-1. 1. Remove the system-wide link: `npm unlink`
+1. Remove the system-wide link: `npm unlink`
 1. Remove the temporary test directory `create-exposed-app-test-my-new-feature`

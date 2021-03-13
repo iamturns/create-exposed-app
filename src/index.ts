@@ -29,11 +29,6 @@ async function main() {
       // Type declarations provided by `hygen` are limited
       // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-return
       enquirer as any,
-    exec: (action, body) => {
-      const hasBody = body && body.length > 0;
-      const opts = hasBody ? { input: body } : {};
-      return execa(action, opts);
-    },
     debug: isDebug,
   });
 }

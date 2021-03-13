@@ -58,6 +58,7 @@ You can also invoke the app with arguments. For example:
 ```bash
 npx create-exposed-app \
   --packageName="my-awesome-project" \
+  --npmScope="@example" \
   --oneLiner="Does awesome stuff" \
   --authorName="Bruce Wayne" \
   --authorEmail="bruce.wayne@gmail.com" \
