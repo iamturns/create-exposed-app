@@ -9,7 +9,7 @@ import enquirer from "enquirer";
 
 import { getNpmPackageName } from "../../../template-variables";
 
-const prompts = [
+const allPrompts = [
   {
     type: "input",
     name: "packageName",
@@ -54,12 +54,18 @@ const prompts = [
 
 export const prompt = async ({
   prompter,
+  args,
 }: {
   prompter: enquirer;
+  args: Record<string, string>;
 }): Promise<Record<string, unknown>> => {
-  const answers = await prompter.prompt(prompts);
+  const promptsToAsk = allPrompts.filter(
+    (promptToAsk) => !Object.keys(args).includes(promptToAsk.name)
+  );
+  const promptAnswers = await prompter.prompt(promptsToAsk);
+  const allUserAnswers = { ...args, ...promptAnswers };
   return {
-    ...answers,
-    npmPackageName: getNpmPackageName(answers),
+    ...allUserAnswers,
+    npmPackageName: getNpmPackageName(allUserAnswers),
   };
 };
