@@ -52,7 +52,6 @@ to: package.json
     "@babel/preset-env": "7.13.10",
     "@babel/preset-typescript": "7.13.0",
     "@types/debug": "4.1.5",
-    "@types/dotenv": "8.2.0",
     "@types/jest": "26.0.20",
     "@typescript-eslint/eslint-plugin": "4.17.0",
     "babel-jest": "26.6.3",
