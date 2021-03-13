@@ -5,11 +5,10 @@ This guide is intended for maintainers (anybody with commit access).
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Maintaining](#maintaining)
-  - [Code of Conduct](#code-of-conduct)
-  - [Setup](#setup)
-  - [Reviewing Pull Requests](#reviewing-pull-requests)
-  - [Approving Pull Requests](#approving-pull-requests)
+- [Code of Conduct](#code-of-conduct)
+- [Setup](#setup)
+- [Reviewing Pull Requests](#reviewing-pull-requests)
+- [Approving Pull Requests](#approving-pull-requests)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
