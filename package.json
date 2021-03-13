@@ -1,6 +1,6 @@
 {
   "name": "create-exposed-app",
-  "version": "8.1.1",
+  "version": "8.1.2",
   "description": "App generator with everything exposed for maximum control (powered by TypeScript, ESBuild, Jest, ESLint, GitHub Actions, Prettier, and more)",
   "homepage": "https://github.com/iamturns/create-exposed-app",
   "bugs": {
