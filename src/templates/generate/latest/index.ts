@@ -1,8 +1,19 @@
-module.exports = [
+/**
+ * This file is read by hygen
+ */
+
+import enquirer from "enquirer";
+
+const prompts = [
   {
     type: "input",
     name: "packageName",
     message: "Package name (e.g. my-awesome-project)",
+  },
+  {
+    type: "input",
+    name: "npmScope",
+    message: "NPM package scope (optional) (e.g. @batman)",
   },
   {
     type: "input",
@@ -35,3 +46,25 @@ module.exports = [
     message: "Author website (e.g. https://batman.com)",
   },
 ];
+
+export const prompt = async ({
+  prompter,
+}: {
+  prompter: enquirer;
+}): Promise<Record<string, unknown>> => {
+  const answers = await prompter.prompt(prompts);
+  return {
+    ...answers,
+    npmPackageName: getNpmPackageName(answers),
+  };
+};
+
+function getNpmPackageName({
+  packageName,
+  npmScope,
+}: {
+  packageName?: string;
+  npmScope?: string;
+}): string | undefined {
+  return [npmScope, packageName].filter(Boolean).join("/");
+}

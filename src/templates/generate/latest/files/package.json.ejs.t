@@ -2,7 +2,7 @@
 to: package.json
 ---
 {
-  "name": "@<%- authorGithub %>/<%- packageName %>",
+  "name": "<%- npmPackageName %>",
   "version": "2.0.0",
   "description": "<%- oneLiner %>",
   "homepage": "https://github.com/<%- authorGithub %>/<%- packageName %>",

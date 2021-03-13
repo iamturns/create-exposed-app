@@ -58,13 +58,13 @@ You can also invoke the app with arguments. For example:
 
 ```bash
 npx create-exposed-app \
-  --project-package-name="my-awesome-project" \
-  --project-overview="Does awesome stuff" \
-  --side="server" \
-  --author-name="Bruce Wayne" \
-  --author-email="bruce.wayne@gmail.com" \
-  --author-github="batman" \
-  --author-website="https://batman.com"
+  --packageName="my-awesome-project" \
+  --oneLiner="Does awesome stuff" \
+  --authorName="Bruce Wayne" \
+  --authorEmail="bruce.wayne@gmail.com" \
+  --authorGithub="batman" \
+  --authorTwitter="TheRealBatman" \
+  --authorWebsite="https://batman.com"
 ```
 
 ## Credits
@@ -82,17 +82,10 @@ Open-source under [MIT License](https://github.com/iamturns/create-exposed-app/b
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [create-exposed-app](#create-exposed-app)
-  - [What's included?](#whats-included)
-  - [Setup](#setup)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [FAQ](#faq)
-    - [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
-    - [I wish something was different…](#i-wish-something-was-different)
-    - [Can I contribute code?](#can-i-contribute-code)
-    - [My question isn't answered :(](#my-question-isnt-answered-)
+- [Uh oh, something went wrong!](#uh-oh-something-went-wrong)
+- [I wish something was different…](#i-wish-something-was-different)
+- [Can I contribute code?](#can-i-contribute-code)
+- [My question isn't answered :(](#my-question-isnt-answered-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

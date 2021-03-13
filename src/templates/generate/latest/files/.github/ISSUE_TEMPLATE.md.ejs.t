@@ -25,7 +25,7 @@ What happens instead? Please include if possible and/or relevant: error messages
 
 <!-- Remove items that aren't relevant -->
 
-- `@<%- authorGithub %>/<%- packageName %>` version: [e.g. latest]
+- `<%- npmPackageName %>` version: [e.g. latest]
 - Node.js version:
 - npm version:
 - Operating System and version: [e.g. macOS XX, iOS XX. See whatsmyos.com]

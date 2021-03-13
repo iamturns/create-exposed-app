@@ -7,7 +7,7 @@ export interface Config {
 
 export function createConfig(): Config {
   return {
-    PACKAGE_NAME: "@<%- authorGithub %>/<%- packageName %>",
+    PACKAGE_NAME: "<%- packageName %>",
   };
 }
 

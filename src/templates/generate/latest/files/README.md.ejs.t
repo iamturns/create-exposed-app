@@ -1,20 +1,9 @@
 ---
 to: README.md
 ---
-# create-exposed-app-2
+# <%- npmPackageName %>
 
-Getting setup:
-
-- Fill out the README.md below
-- npm login
-- npm token create
-- [Add a secret](https://github.com/<%- authorGithub %>/<%- packageName %>/settings/secrets)
-  - NPM_TOKEN
-- Delete this section
-
----
-
-[![Version](https://img.shields.io/npm/v/@<%- authorGithub %>/<%- packageName %>.svg?style=flat-square)](https://www.npmjs.com/package/@<%- authorGithub %>/<%- packageName %>?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/@<%- authorGithub %>/<%- packageName %>.svg?style=flat-square)](https://www.npmjs.com/package/@<%- authorGithub %>/<%- packageName %>) [![Last commit](https://img.shields.io/github/last-commit/<%- authorGithub %>/<%- packageName %>.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>/graphs/commit-activity) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2F<%- authorGithub %>%2<%- packageName %>%2Fbadge%3Fref%3Dmaster&style=flat&label=build&logo=false)](https://actions-badge.atrox.dev/<%- authorGithub %>/<%- packageName %>/goto?ref=master) [![Coverage Status](https://coveralls.io/repos/github/<%- authorGithub %>/<%- packageName %>/badge.svg?branch=master)](https://coveralls.io/github/<%- authorGithub %>/<%- packageName %>?branch=master) [![License](https://img.shields.io/github/license/<%- authorGithub %>/<%- packageName %>.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>#can-i-contribute-code) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>/blob/master/CODE_OF_CONDUCT.md)
+[![Version](https://img.shields.io/npm/v/<%- npmPackageName %>.svg?style=flat-square)](https://www.npmjs.com/package/<%- npmPackageName %>?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/<%- npmPackageName %>.svg?style=flat-square)](https://www.npmjs.com/package/<%- npmPackageName %>) [![Last commit](https://img.shields.io/github/last-commit/<%- authorGithub %>/<%- packageName %>.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>/graphs/commit-activity) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2F<%- authorGithub %>%2<%- packageName %>%2Fbadge%3Fref%3Dmaster&style=flat&label=build&logo=false)](https://actions-badge.atrox.dev/<%- authorGithub %>/<%- packageName %>/goto?ref=master) [![Coverage Status](https://coveralls.io/repos/github/<%- authorGithub %>/<%- packageName %>/badge.svg?branch=master)](https://coveralls.io/github/<%- authorGithub %>/<%- packageName %>?branch=master) [![License](https://img.shields.io/github/license/<%- authorGithub %>/<%- packageName %>.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>#can-i-contribute-code) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/<%- authorGithub %>/<%- packageName %>/blob/master/CODE_OF_CONDUCT.md)
 
 > <%- oneLiner %>
 
@@ -23,13 +12,13 @@ Write an excellent introduction to your app here.
 ## Setup
 
 ```bash
-npm install @<%- authorGithub %>/<%- packageName %>
+npm install <%- npmPackageName %>
 ```
 
 ## Usage
 
 ```js
-import { EXAMPLE } from '@<%- authorGithub %>/<%- packageName %>';
+import { EXAMPLE } from '<%- npmPackageName %>';
 ```
 
 ## Credits

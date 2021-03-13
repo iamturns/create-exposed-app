@@ -3,9 +3,8 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Developing](#developing)
-  - [How do I setup the project for development?](#how-do-i-setup-the-project-for-development)
-  - [What's the development workflow?](#whats-the-development-workflow)
+- [How do I setup the project for development?](#how-do-i-setup-the-project-for-development)
+- [What's the development workflow?](#whats-the-development-workflow)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
