@@ -54,6 +54,7 @@ to: package.json
     "@types/debug": "4.1.7",
     "@types/jest": "27.4.0",
     "@typescript-eslint/eslint-plugin": "5.8.1",
+    "@typescript-eslint/parser": "5.8.1",
     "babel-jest": "27.4.5",
     "doctoc": "2.1.0",
     "esbuild": "0.14.10",
