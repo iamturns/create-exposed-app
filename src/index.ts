@@ -3,7 +3,7 @@
 // Ignore this file from unit tests. It should be tested by an end-to-end test instead.
 /* istanbul ignore file */
 
-import path from "path";
+import path from "node:path";
 
 import enquirer from "enquirer";
 import { Logger as HygenLogger, runner as hygen } from "hygen";
