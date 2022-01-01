@@ -2,6 +2,15 @@
 
 <!-- markdownlint-disable -->
 
+### [8.1.4](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.3...v8.1.4) (2022-01-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency debug to v4.3.3 ([#170](https://www.github.com/iamturns/create-exposed-app/issues/170)) ([9ec3176](https://www.github.com/iamturns/create-exposed-app/commit/9ec31762ba7460be696d15525c05565e3d655bca))
+* **deps:** update dependency dotenv to v8.6.0 ([#158](https://www.github.com/iamturns/create-exposed-app/issues/158)) ([45ba9f9](https://www.github.com/iamturns/create-exposed-app/commit/45ba9f9b7a1e89c9cf72dd33b5d18e07fef2dfbf))
+* **deps:** update dependency hygen to v6.1.0 ([#156](https://www.github.com/iamturns/create-exposed-app/issues/156)) ([88e4821](https://www.github.com/iamturns/create-exposed-app/commit/88e48214b99e3a3ded9f3a387343660bc623fa73))
+
 ### [8.1.3](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.2...v8.1.3) (2021-03-13)
 
 ### Bug Fixes
