@@ -3,10 +3,13 @@
 // Ignore this file from unit tests. It should be tested by an end-to-end test instead.
 /* istanbul ignore file */
 
-import path from "path";
+import path from "node:path";
 
 import enquirer from "enquirer";
 import { Logger as HygenLogger, runner as hygen } from "hygen";
+
+// eslint-disable-next-line unicorn/prefer-module
+const userDir = __dirname;
 
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
 (async () => {
@@ -22,7 +25,7 @@ async function main() {
 
   await hygen(hygenArgs, {
     cwd: process.cwd(),
-    templates: path.join(__dirname, "templates"),
+    templates: path.join(userDir, "templates"),
     logger: hygenLogger,
     createPrompter: () =>
       // Type declarations provided by `hygen` are limited
