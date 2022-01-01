@@ -33,7 +33,7 @@ jobs:
         run: npm run validate
 
       # This action will usually create (or update) a "release" PR, containing a version bump and changelog updates
-      - uses: GoogleCloudPlatform/release-please-action@v2
+      - uses: GoogleCloudPlatform/release-please-action@v3
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
