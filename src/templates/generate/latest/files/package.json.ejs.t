@@ -41,7 +41,8 @@ to: package.json
     "build-js--esm": "gen-esm-wrapper dist/index.js dist/index.esm.js",
     "build-dts": "tsc --emitDeclarationOnly",
     "build-dts--watch": "npm run build-dts -- --watch --preserveWatchOutput",
-    "validate": "run-p --print-label lint test build"
+    "validate": "run-p --print-label lint test build",
+    "commitlint--all": "npx commitlint --from $(git rev-list --max-parents=0 HEAD) --to HEAD"
   },
   "dependencies": {
     "debug": "^4.3.3",
@@ -51,6 +52,8 @@ to: package.json
     "@babel/core": "7.16.7",
     "@babel/preset-env": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
     "@types/debug": "4.1.7",
     "@types/jest": "27.4.0",
     "@typescript-eslint/eslint-plugin": "5.8.1",

@@ -32,6 +32,7 @@
     "build-js--watch": "node bin/build.js --watch",
     "build-templates": "mkdir ./dist/templates && cp -r ./src/templates ./dist",
     "validate": "run-p --print-label lint test build",
+    "commitlint--all": "npx commitlint --from $(git rev-list --max-parents=0 HEAD) --to HEAD",
     "manual-test": "bash bin/manual-test.sh",
     "manual-test--cleanup": "bash bin/manual-test--cleanup.sh"
   },
@@ -44,6 +45,8 @@
     "@babel/core": "7.16.7",
     "@babel/preset-env": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
     "@types/debug": "4.1.7",
     "@types/jest": "27.4.0",
     "@typescript-eslint/eslint-plugin": "5.8.1",
