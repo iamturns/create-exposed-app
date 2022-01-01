@@ -7,7 +7,8 @@ module.exports = {
     "unicorn",
   ],
   extends: [
-    "airbnb-typescript",
+    "airbnb-base",
+    "airbnb-typescript/base",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:eslint-comments/recommended",
@@ -21,6 +22,7 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "./tsconfig.json",
   },
@@ -56,8 +58,9 @@ module.exports = {
     {
       files: ["*.js"],
       rules: {
-        // Allow `require()`
+        // Allow CJS until ESM support improves
         "@typescript-eslint/no-var-requires": "off",
+        "unicorn/prefer-module": "off",
       },
     },
   ],
