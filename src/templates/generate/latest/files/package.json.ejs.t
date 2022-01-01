@@ -63,7 +63,7 @@ to: package.json
     "eslint-config-prettier": "8.3.0",
     "eslint-formatter-pretty": "4.1.0",
     "eslint-plugin-eslint-comments": "3.2.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "2.25.3",
     "eslint-plugin-jest": "25.3.3",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-promise": "6.0.0",
