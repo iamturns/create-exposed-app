@@ -39,9 +39,9 @@
     "hygen": "6.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/preset-env": "7.13.10",
-    "@babel/preset-typescript": "7.13.0",
+    "@babel/core": "7.16.7",
+    "@babel/preset-env": "7.16.7",
+    "@babel/preset-typescript": "7.16.7",
     "@types/debug": "4.1.7",
     "@types/jest": "26.0.24",
     "@typescript-eslint/eslint-plugin": "4.33.0",
