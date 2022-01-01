@@ -2,6 +2,17 @@
 
 <!-- markdownlint-disable -->
 
+## [9.0.0](https://github.com/iamturns/create-exposed-app/compare/v8.1.3...v9.0.0) (2022-01-01)
+
+### ⚠ BREAKING CHANGES
+
+- Updated dependencies, config, and files. Please re-run `create-exposed-app` to update.
+
+### Features
+
+- all dependencies updated (with required changes to config and files)
+- commitlint config file and command
+
 ### [8.1.3](https://www.github.com/iamturns/create-exposed-app/compare/v8.1.2...v8.1.3) (2021-03-13)
 
 ### Bug Fixes
