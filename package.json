@@ -42,9 +42,9 @@
     "hygen": "^6.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.16.7",
-    "@babel/preset-env": "7.16.7",
-    "@babel/preset-typescript": "7.16.7",
+    "@babel/core": "7.25.9",
+    "@babel/preset-env": "7.25.9",
+    "@babel/preset-typescript": "7.25.9",
     "@commitlint/cli": "16.0.1",
     "@commitlint/config-conventional": "16.0.0",
     "@types/debug": "4.1.7",
